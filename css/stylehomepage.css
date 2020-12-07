@@ -142,7 +142,7 @@ display: inline;
     justify-content: flex-start !important;}
   }
 @media (max-width: 576px){
-  .prem-filter .pre .newbtn{
+  .prem-filter .pre1 .newbtn{
     right: 30% ;
     top: 10%  ;
   }
