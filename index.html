@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
     />
     <title>Property Results Page</title>
-    <link rel="stylesheet" href="style_side_right_bar.css">
+   
 
     <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
     <link
@@ -29,7 +29,7 @@
       href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css"
       rel="stylesheet"
     />
-    <link href="stylehomepage.css" rel="stylesheet" />
+    <link href="./css/stylehomepage.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
@@ -187,16 +187,13 @@
                           document.getElementById("collapseOne").classList.remove("show")
                         }
                       </script>
-<div class="prem-filter">
+                      <div class="prem-filter">
                         <div class="pre" style="margin-top: -5px; background-color: #2ECAB6; text-align: center; padding: 0.6rem 0;  position: relative;"><strong style="margin-left:0.5rem;" >Sheltie's Shelter<input type="checkbox" data-toggle="modal" data-target="#exampleModalLong" style=" margin-left: 10px; margin-top: 2px;"> </strong>
                         </div> 
-
-
-                        <div class="pre1">
+                           <div class="pre1">
                           <button style=" font-size: 13px; float: right; margin-right: 48px; margin-top: 7px;" class="newbtn"  disabled > Free</button>
                           <p  style=" text-align: center; margin-left: 53px;padding-top: 0px; padding-top: 12px; margin-right: 20px;">Premium Filters </p>                           
-</div>
-   
+                        </div>  
                       </div>  
                        <hr style="margin: 0">
                       <div class="scroll">
@@ -372,7 +369,7 @@
                             function uncheckAll() {
                               $("input[type='checkbox']:checked").prop("checked", false)
                             }
-                            $(':clearall').on('click', uncheckAll)
+                            $('#clearall').on('click', uncheckAll)
                           </script>
 
                  </nav>  
@@ -383,7 +380,7 @@
   <!---------------middle part start------------------------->
 <!---------------middle part start------------------------->
 <div class="col-lg-8 col-md-7 col-sm-7">
-    <div class="middle " style="background: white;">
+    <div class="middle ">
           <div style="margin-top: 0;  border:none!important;" class="generalcard">
               <div class="checkbox" style=" margin-top: 0; border: solid #2ecab6;border-radius: 2px; background-color: white ">
                   <div class=" d-flex justify-content-around">
@@ -407,44 +404,39 @@
             
 
 
-              <div style=" margin:5px 10px; background-color: white; border: 1px solid grey;" class="upper">
+              <div style="margin-top:5px; background-color: white; border: 1px solid grey;" class="upper">
                 <div class="container-fluid">
                 <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 pt-3">
                   <div  class="images">
-                    
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                            <ol class="carousel-indicators">
-
-
                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-
-
                            </ol>
-                           
                            <div class="carousel-inner">
-
                                <div class="carousel-item active">
-                               <div class="watermark">
-                              <div class="content">Sheltown.in</div>
-                            </div>
-                                   <img class="d-block w-100" src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181"
+                                 <div class="watermark">
+                             <div class="content">Sheltown.in</div>
+                           </div>
+
+                                   <img class="d-block w-100"
+                                       src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181"
                                        alt="First slide">
                                </div>
                                <div class="carousel-item">
-                            <div class="watermark">
-                              <div class="content">Sheltown.in</div>
-                            </div>
+                                 <div class="watermark">
+                             <div class="content">Sheltown.in</div>
+                           </div>
                                    <img class="d-block w-100"
                                        src="https://tse1.mm.bing.net/th?id=OIP.bdAMSmpabS6xShIY93C-CAHaFj&pid=Api&P=0&w=244&h=184"
                                        alt="Second slide">
                                </div>
                                <div class="carousel-item">
-                            <div class="watermark">
-                              <div class="content">Sheltown.in</div>
-                            </div>
+                                 <div class="watermark">
+                             <div class="content">Sheltown.in</div>
+                           </div>
                                    <img class="d-block w-100"
                                        src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166"
                                        alt="Third slide">
@@ -466,173 +458,110 @@
                      
                 </div><!-----col-4(image) end----------->
                 <div class="col-lg-8 col-md-8 col-sm-8">
-                      <div  style="margin:0; margin-top: 15px;margin-right: 18px;" class="pp2 " >
+                      <div  style="margin:15px 0 ;" class="pp2 " >
 
                                  Property Name
-                                 <button style="float: right; border: none;outline: none;background-color: white;" id="btn-heart"><i class="fa fa-heart  heartinactive" id="heart" ></i></button>
-                                 
-                                   <style>
-                                    .heartactive{
-                                      color: red !important;
-                                      font-size:23px;
-                                    }
-                                    .heartinactive{
-                                      color:#9fa5a5 !important;
-                                      font-size:19px;
-                                    }
-                                  </style>
-                                  <script>
-                                  var t = document.getElementById("heart");
-                                  document.getElementById("btn-heart").addEventListener("click",changecolor);
-                                  function changecolor(){
-                                    if(t.classList.contains("heartinactive")){
-                                      document.getElementById("heart").classList.add("heartactive");
-                                      document.getElementById("heart").classList.remove("heartinactive");
-                                    }
-                                    else{
-                                      document.getElementById("heart").classList.add("heartinactive");
-                                      document.getElementById("heart").classList.remove("heartactive");
-                                    }
-                                  }
-
-                                  </script>
-                                 
-                                 <hr style="margin: 4px;">
-                                 <i class="fa fa-map-marker-alt" aria-hidden="true"></i>     Nearby<br><hr  style="margin: 3px; margin-top: 3px">
-                                  
-                        <div class="price-nego">
-                       
-                       <div class="negoo " data-toggle="modal" data-target="#myModal"> ₹4500 </div>
-                       <i class="fa fa-asterisk" aria-hidden="true" data-toggle="tooltip" title="Negotiable"  data-placement="top"  style=" padding-top: 0.1rem; font-size: x-small; color:  black !important;margin-top: 0.2rem; cursor: pointer;color: #2ecab6; margin-top: 5px; margin-left: 3px;" ></i>
-                         
-                        <button type="button" class="btn btn-secondary btn-hid" data-container="body" data-toggle="popover" style=" visibility: hidden;" ></button> </div>                       
-
-                                 <!--categoryy alined start-->                     
-                                 <div class="container-fluid " >
-                                   <style>
-                                     select{
-                                       background-color: #dadce4;
-                                       color: black;
-                                       border: none;
-                                       outline: none;
-                                       appearance: none;
-                                       border: solid  2px #dadce4;
-                                       border-radius: 5px;
-                                       width: 10em;
-                                       text-indent: 2px;
-                                     
-                                      
-                                     }
-                                     option{
-                                       background-color: #dadce4;
-                                       color: black;
-                                      
-                                     }
-                                  
-
-                                     @media only screen and (max-width: 1200px) {
-                                       div  .lower a{
-                                        float: left !important;
-                                        padding-top: -40px !important;
-                                       }
-                                       .live{
-                                        margin-top: 2px !important;
-                                       }
-                                       .filters, .sortby{
-                                        height: 25px !important;
-                                       }
-                                       
-                                     }
-                                   </style>
-                                   <ul class=" floatleft" ; >
-                                     <li style="list-style-type: none;"><div class="dropdown-container1">
-                                      <select  class="mt-1" name="category" id="category" >
-                                        <option value="none" selected disabled>Category</option>
-                                        <option value="none">PG/Hostel</option>
-                                        <option value="none">Apartment</option>
-                                        <option value="none">Independent House</option>
-                                        <option value="none">Gated Community</option>
-                                      </select>
-                                    </div></li>
-                                   <!-- <br> -->
-                                    <li style="list-style-type: none;"><div class="dropdown-container2">
-                                      <select class="  mt-1"  name="opt1" id="opt1" >
-                                        <option value="none" selected disabled>Preference</option>
-                                        <option value="none">Male only </option>
-                                        <option value="none">Female Only</option>
-                                        <option value="none">Couple Privacy</option>
-                                        <option value="none">Family zoned</option>
-                                      </select>
-                                        
-                                      </div></li>
-            
-                                        <li style="list-style-type: none;"><div class="dropdown-container3">
-                                          <select class="  mt-1"width name="opt2" id="opt2">
-                                            <option value="none" selected disabled>Deposit</option>
-                                            <option value="none">1 Month Deposit</option>
-                                            <option value="none">2 Month Deposit</option>
-                                            <option value="none">No Security</option>
-                                          </select>
-
-                                      
-                                     </div></li>
-                                   </ul>
-                                          <!--  <br> -->
-                                    <ul >
-                                     <li style="list-style-type: none; margin-top: 20px !important;"><div class="dropdown-container5">
-                                      <select class=" mt-1" name="category" id="category" >
-                                        <option value="none" selected disabled>Furnish</option>
-                                        <option value="none">Non Furnished</option>
-                                        <option value="none">Semi Furnished</option>
-                                        <option value="none">Fully Furnished</option>
-                                      </select>
-                                    </div></li>
-            
+                                 <button style="float: right; border: none;outline: none;background-color: white;" id="btnhearta"><i class="fa fa-heart " style=" color:#9fa5a5 ;font-size:19px;"  id="hearta" ></i></button>
+                     
+                                
+                                 <hr style="margin: 4px; ">
+                                 <i class="fa fa-map-marker-alt" aria-hidden="true"></i>Nearby<br><hr  style="margin: 3px; margin-top: 3px">
+                        
+                                 <div class="price-nego">
+                                   <div style="position: relative; " class="negoo  hide-owner-mv" data-toggle="modal" data-target="#myModal"> ₹4500 <i class="fa fa-asterisk" aria-hidden="true" data-toggle="tooltip" title="Negotiable"  data-placement="top"  style="position: absolute; top: 10%;right: 5%; font-size: x-small; font-size: 7px; color:  black !important; cursor: pointer;" ></i></div>
+                                     </div>
+                        
+                        
+                        
+                        
+                        
+                                 <div class="catmm" >
                                    
-                                 <!--  <br> -->
-                                 <li style="list-style-type: none;">
-                                  <div class="dropdown-container7">
-                                    <select class=" mt-1" name="category"  id="category">
-                                      <option value="none" selected disabled>BHK Type</option>
-                                      <option value="none">1 RK</option>
-                                      <option value="none">1 BHK</option>
-                                      <option value="none">2 BHK</option>
-                                      <option value="none">3 BHK</option>
-                                      <option value="none">4 BHK</option>
-                                      <option value="none">5 BHK</option>
-                                  </select>
-                                  
-                                   </div></li>
-
-                                   <li style="list-style-type: none;"> <div class="dropdown-container6">
-                                    <select class="  mt-1" name="category"  id="category">
-                                      <option value="none" selected disabled>Property Age</option>
-                                      <option value="none">Below 5</option>
-                                      <option value="none">Below 5</option>
-                                      <option value="none">5-10</option>
-                                      <option value="none">10-15</option>
-                                      <option value="none">Above 15</option>
-                                  </select>
-                                  
-                                    </div></li></ul>
-                                  
-                                      <!--   <br> -->
-                                       
+                                   
+                                   <div class="col1">
+                                     <select  name="category" id="category" >
+                                       <option value="none" selected disabled>Category</option>
+                                       <option value="none">PG/Hostel</option>
+                                       <option value="none">Apartment</option>
+                                       <option value="none">Independent House</option>
+                                       <option value="none">Gated Community</option>
+                                     </select>
+                                    </div>
+                                  <!-- <br> -->
+                                <div class="col2">
+                                     <select  name="opt1" id="opt1" >
+                                       <option value="none" selected disabled>Preference</option>
+                                       <option value="none">Male only </option>
+                                       <option value="none">Female Only</option>
+                                       <option value="none">Couple Privacy</option>
+                                       <option value="none">Family zoned</option>
+                                     </select>
                                 </div>
-                               
-                                <!--category alined end here-->
+                           
+           
+                                <div class="col3">
+                                         <select   id="opt2">
+                                           <option value="none" selected disabled>Deposit</option>
+                                           <option value="none">1 Month Deposit</option>
+                                           <option value="none">2 Month Deposit</option>
+                                           <option value="none">No Security</option>
+                                         </select>
+                                       </div>
 
+                                     
+                                
+                                         <!--  <br> -->
+                            
+                                   <div class="col4">
+                                     <select name="category" id="category" >
+                                       <option value="none" selected disabled>Furnish</option>
+                                       <option value="none">Non Furnished</option>
+                                       <option value="none">Semi Furnished</option>
+                                       <option value="none">Fully Furnished</option>
+                                     </select>
+                                    </div>
+           
+                                  
+                                <!--  <br> -->
+                                
+                                <div class="col5">
+                                   <select  name="category"  id="category">
+                                     <option value="none" selected disabled>BHK Type</option>
+                                     <option value="none">1 RK</option>
+                                     <option value="none">1 BHK</option>
+                                     <option value="none">2 BHK</option>
+                                     <option value="none">3 BHK</option>
+                                     <option value="none">4 BHK</option>
+                                     <option value="none">5 BHK</option>
+                                 </select>
+                                </div>
+                                 
+
+                                 <div class="col6">
+                                   <select name="category"  id="category">
+                                     <option value="none" selected disabled>Property Age</option>
+                                     <option value="none">Below 5</option>
+                                     <option value="none">Below 5</option>
+                                     <option value="none">5-10</option>
+                                     <option value="none">10-15</option>
+                                     <option value="none">Above 15</option>
+                                 </select>
+                                 </div>
+                                   </div>
+                                 
+            
+                                
+                
 
                    </div><!-----pp2 end------->
-                  <div class="lower2 py-2" style="float: right; ">
-                         <button data-toggle="modal" data-target="#myModal2" style=" border : none;background-color: #32a898; color: white;" type="button" class="btn btn-primary mt-2 btn-sm";>Owner Details</button>
-                         <button data-toggle="modal" data-target="#myModal4" style=" border : none;background-color: #32a898; color: white; margin-left: 5px;" type="button" class="btn btn-primary mt-2 btn-sm">Book Now </button>
-                       </div>
-                     
-                        
-                       
-                   
-
+                  
+                   <div class="lower2 py-2">
+                    <button  aria-hidden="true"  data-placement="top"  data-toggle="tooltip" title="Unlimited Owner Details-Free" style=" border : none;background-color: #32a898; color: white;" type="button" class="btn btn-primary  btn-sm  btn-sm hide-owner-mv";>Owner Details</button>
+                    <button aria-hidden="true"  data-placement="top"  data-toggle="tooltip" title="Online Booking only Available for Premium Properties" style=" border : none;background-color: #32a898; color: white; margin-left: 5px;" type="button" class="btn btn-primary  btn-sm  btn-sm hide-owner-mv">Book Now </button>
+                    <a class="hide-owner-dv" data-toggle="modal" data-target="#myModal" style="float: left; text-decoration: none; position: relative; padding: 5px 8px; padding-left: 0;  font-size: large; font-weight: bold; color: red;">₹4500 <i class="fa fa-asterisk" aria-hidden="true" data-toggle="tooltip" title="Negotiable"  data-placement="top"  style="  position: absolute; top :25%;right:0; font-size: 7px; color:  black !important; cursor: pointer;" ></i></a>
+                    <button  aria-hidden="true"  style=" border : none;background-color: #32a898; color: white;" type="button" class="btn btn-primary  btn-sm mt-1 hide-owner-dv">Owner Details</button>
+                    <button aria-hidden="true"  style=" border : none;background-color: #32a898; color: white;" type="button" class="btn btn-primary  btn-sm mt-1 hide-owner-dv ">Book Now </button>
+                   </div>
            </div><!---col-8 end------->
 
 
@@ -649,7 +578,7 @@
 <!-----genaral card div end-------------->
 <!-- card 2 start
  --><br>
-    <div style=" margin:5px 10px; background-color: white; border: 1px solid grey;">
+    <div style=" margin-top:5px ; background-color: white; border: 1px solid grey;" class="upper">
                  <div class="container-fluid">
                  <div class="row">
                  <div class="col-lg-4 col-md-4 col-sm-4 pt-3">
@@ -703,136 +632,105 @@
                       
                  </div><!-----col-4(image) end----------->
                  <div class="col-lg-8 col-md-8 col-sm-8">
-                       <div  style="margin:0; margin-top: 15px;margin-right: 15px;" class="pp2 " >
+                       <div  style="margin:15px 0 ;" class="pp2 " >
 
                                   Property Name
-                                  <button style="float: right; border: none;outline: none;background-color: white;" id="btn-heart-a"><i class="fa fa-heart  heartinactive-a" id="heart-a" ></i></button>
-                                  <style>
-                                    .heartactive{
-                                      color: red !important;
-                                      font-size:23px;
-                                    }
-                                    .heartinactive-a{
-                                      color:#9fa5a5 !important;
-                                      font-size:19px;
-                                    }
-                                  </style>
-                                  <script>
-                                  var v = document.getElementById("heart-a");
-                                  document.getElementById("btn-heart-a").addEventListener("click",changecolor);
-                                  function changecolor(){
-                                    if(v.classList.contains("heartinactive-a")){
-                                      document.getElementById("heart-a").classList.add("heartactive");
-                                      document.getElementById("heart-a").classList.remove("heartinactive-a");
-                                    }
-                                    else{
-                                      document.getElementById("heart-a").classList.add("heartinactive-a");
-                                      document.getElementById("heart-a").classList.remove("heartactive");
-                                    }
-                                  }
-                                  
-
-                                  </script>
-                                 
+                                  <button style="float: right; border: none;outline: none;background-color: white;" id="btnhearta1"><i class="fa fa-heart" style=" color:#9fa5a5 ;font-size:19px;" id="hearta1" ></i></button>
                                   <hr style="margin: 4px; ">
                                   <i class="fa fa-map-marker-alt" aria-hidden="true"></i>Nearby<br><hr  style="margin: 3px; margin-top: 3px">
                          
-                         <div class="price-nego">
-                       
-                                    <div class="negoo " data-toggle="modal" data-target="#myModal"> ₹4500 </div>
-                                    <i class="fa fa-asterisk" aria-hidden="true" data-toggle="tooltip" title="Negotiable"  data-placement="top"  style=" padding-top: 0.1rem; font-size: x-small; color:  black !important;margin-top: 0.2rem; cursor: pointer;color: #2ecab6; margin-top: 5px; margin-left: 3px;" ></i>
-                                      
-                                     <button type="button" class="btn btn-secondary btn-hid" data-container="body" data-toggle="popover" style=" visibility: hidden;" ></button> </div>
+                                  <div class="price-nego ">
+                                    <div style="position: relative; " class="negoo  hide-owner-mv " data-toggle="modal" data-target="#myModal"> ₹4500 <i class="fa fa-asterisk" aria-hidden="true" data-toggle="tooltip" title="Negotiable"  data-placement="top"  style="position: absolute; top: 10%;right: 5%; font-size: 7px; color:  black !important; cursor: pointer;" ></i></div>
+                                    </div>
                          
                          
                          
                          
                          
-                                  <div class="container-fluid ">
-                                    
-                                    
-                                    <ul  style="margin-top: 0;">
-                                      <li style="list-style-type: none;"><div class="dropdown-container1">
-                                       <select  class="mt-1" name="category" id="category" >
-                                         <option value="none" selected disabled>Category</option>
-                                         <option value="none">PG/Hostel</option>
-                                         <option value="none">Apartment</option>
-                                         <option value="none">Independent House</option>
-                                         <option value="none">Gated Community</option>
-                                       </select>
-                                     </div></li>
-                                    <!-- <br> -->
-                                     <li style="list-style-type: none;"><div class="dropdown-container2">
-                                       <select class="  mt-1"  name="opt1" id="opt1" >
-                                         <option value="none" selected disabled>Preference</option>
-                                         <option value="none">Male only </option>
-                                         <option value="none">Female Only</option>
-                                         <option value="none">Couple Privacy</option>
-                                         <option value="none">Family zoned</option>
-                                       </select>
-                                         
-                                       </div></li>
-             
-                                         <li style="list-style-type: none;"><div class="dropdown-container4">
-                                           <select class="  mt-1"width name="opt2" id="opt2">
-                                             <option value="none" selected disabled>Deposit</option>
-                                             <option value="none">1 Month</option>
-                                             <option value="none">2 Month</option>
-                                             <option value="none">No Security</option>
-                                           </select>
-                                       
-             
-                                     </select>
-                                       
-                                      </div></li>
-                                    </ul>
-                                           <!--  <br> -->
-                                     <ul style="margin-top: 0;">
-                                      <li style="list-style-type: none;"><div class="dropdown-container5">
-                                       <select class="mt-1" name="category" id="category" >
-                                         <option value="none" selected disabled>Furnish</option>
-                                         <option value="none">Non</option>
-                                         <option value="none">Semi</option>
-                                         <option value="none">Fully</option>
-             
-             
-                                       </select>
-                                     </div></li>
-             
-                                    
-                                  <!--  <br> -->
-                                  <li style="list-style-type: none;">
-                                   <div class="dropdown-container7">
-                                     <select class=" mt-1" name="category"  id="category">
-                                       <option value="none" selected disabled>BHK Type</option>
-                                       <option value="none">1 BHK</option>
-                                       <option value="none">2 BHK</option>
-                                       <option value="none">3 BHK</option>
-                                       <option value="none">4 BHK</option>
-                                       <option value="none">5 BHK</option>
-                                   </select>
+                                     <div class="catmm"  >
                                    
-                                    </div></li>
-                                    <li style="list-style-type: none;"> <div class="dropdown-container6">
-                                     <select class="  mt-1" name="category"  id="category">
-                                       <option value="none" selected disabled>Property Age</option>
-                                       <option value="none">  < 5</option>
-                                       <option value="none">5-10</option>
-                                       <option value="none">10-15</option>
-                                       <option value="none">> 15</option>
-                                   </select>
+                                   
+                                      <div class="col1">
+                                        <select  name="category" id="category" >
+                                          <option value="none" selected disabled>Category</option>
+                                          <option value="none">PG/Hostel</option>
+                                          <option value="none">Apartment</option>
+                                          <option value="none">Independent House</option>
+                                          <option value="none">Gated Community</option>
+                                        </select>
+                                       </div>
+                                     <!-- <br> -->
+                                   <div class="col2">
+                                        <select  name="opt1" id="opt1" >
+                                          <option value="none" selected disabled>Preference</option>
+                                          <option value="none">Male only </option>
+                                          <option value="none">Female Only</option>
+                                          <option value="none">Couple Privacy</option>
+                                          <option value="none">Family zoned</option>
+                                        </select>
+                                   </div>
+                              
+              
+                                   <div class="col3">
+                                            <select  id="opt2">
+                                              <option value="none" selected disabled>Deposit</option>
+                                              <option value="none">1 Month Deposit</option>
+                                              <option value="none">2 Month Deposit</option>
+                                              <option value="none">No Security</option>
+                                            </select>
+                                          </div>
+   
+                                        
+                                   
+                                            <!--  <br> -->
+                               
+                                      <div class="col4">
+                                        <select  name="category" id="category" >
+                                          <option value="none" selected disabled>Furnish</option>
+                                          <option value="none">Non Furnished</option>
+                                          <option value="none">Semi Furnished</option>
+                                          <option value="none">Fully Furnished</option>
+                                        </select>
+                                       </div>
+              
+                                     
+                                   <!--  <br> -->
+                                   
+                                   <div class="col5">
+                                      <select  name="category"  id="category">
+                                        <option value="none" selected disabled>BHK Type</option>
+                                        <option value="none">1 RK</option>
+                                        <option value="none">1 BHK</option>
+                                        <option value="none">2 BHK</option>
+                                        <option value="none">3 BHK</option>
+                                        <option value="none">4 BHK</option>
+                                        <option value="none">5 BHK</option>
+                                    </select>
+                                   </div>
+                                    
+   
+                                    <div class="col6">
+                                      <select  name="category"  id="category">
+                                        <option value="none" selected disabled>Property Age</option>
+                                        <option value="none">Below 5</option>
+                                        <option value="none">Below 5</option>
+                                        <option value="none">5-10</option>
+                                        <option value="none">10-15</option>
+                                        <option value="none">Above 15</option>
+                                    </select>
+                                    </div>
+                                
+                                      
                                      </div>
-             
-                                 </div>
-
                     </div><!-----pp2 end------->
                    
-<div class="lower2 py-2" style="float: right; ">
-                         <button data-toggle="modal" data-target="#myModal2" style=" border : none;background-color: #32a898; color: white;" type="button" class="btn btn-primary mt-2 btn-sm";>Owner Details</button>
-                         <!-- <button style=" border : none;background-color: #32a898; color: white;margin: 10px;" type="button" class="btn btn-primary">Get owner details</button>-->
-                         <button data-toggle="modal" data-target="#myModal4" style=" border : none;background-color: #32a898; color: white; margin-left: 5px;" type="button" class="btn btn-primary mt-2 btn-sm">Book Now </button>
-                         
-                       </div>
+                    <div class="lower2 py-2">
+                      <button  aria-hidden="true"  data-placement="top"  data-toggle="tooltip" title="Unlimited Owner Details-Free" style=" border : none;background-color: #32a898; color: white;" type="button" class="btn btn-primary  btn-sm  btn-sm hide-owner-mv";>Owner Details</button>
+                      <button aria-hidden="true"  data-placement="top"  data-toggle="tooltip" title="Online Booking only Available for Premium Properties" style=" border : none;background-color: #32a898; color: white; margin-left: 5px;" type="button" class="btn btn-primary  btn-sm  btn-sm hide-owner-mv">Book Now </button>
+                      <a class="hide-owner-dv" data-toggle="modal" data-target="#myModal" style="float: left; text-decoration: none; position: relative; padding: 5px 8px; padding-left: 0;  font-size: 20px !important;  font-weight: bold; color: red;">₹4500 <i class="fa fa-asterisk" aria-hidden="true" data-toggle="tooltip" title="Negotiable"  data-placement="top"  style="  position: absolute; top :25%;right:0; font-size: 7px; color:  black !important; cursor: pointer;" ></i></a>
+                      <button  aria-hidden="true"  style=" border : none;background-color: #32a898; color: white;" type="button" class="btn btn-primary mt-1 btn-sm hide-owner-dv">Owner Details</button>
+                      <button aria-hidden="true"  style=" border : none;background-color: #32a898; color: white;" type="button" class="btn btn-primary mt-1 btn-sm hide-owner-dv ">Book Now </button>
+                     </div>
             </div><!---col-8 end------->
 
 
@@ -877,20 +775,6 @@
     </div>
   </div>
 
-<div class="modal fade" id="myModal2" role="dialog">
-    <div class="modal-dialog">
-   <div class="modal-content">
-        
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-      <div class="modal-body">
-        <h5>Unlimited Owner Details-Free</h5>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -911,21 +795,6 @@
   </div>
 </div>
 
-
-
-<div class="modal fade" id="myModal4" role="dialog">
-    <div class="modal-dialog">
-   <div class="modal-content">
-        
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-      <div class="modal-body">
-        <h5>Online Booking only Available for Premium Properties </h5>
-      </div>
-    </div>
-  </div>
-</div>
 <br>
 
     </div><!--------middle end--->
@@ -1128,13 +997,13 @@
       <script>
         if (screen.width<576){
           document.getElementById("ll").classList.add("l");
-          // document.getElementById("sheltiebtn").classList.remove("dis");
+           
         }
           else{
-            des.classList.add("dis");
+          
             document.getElementById("ll").classList.remove("l");
-            // document.getElementById("checkbox1").classList.remove("diss");
-          //   document.getElementById("collapseOne").classList.remove("collapse-show");
+           
+         
           }
          
         </script>
