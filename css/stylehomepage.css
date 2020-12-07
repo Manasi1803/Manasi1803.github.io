@@ -143,10 +143,10 @@ display: inline;
   }
 @media (max-width: 576px){
   .prem-filter .pre1 .newbtn{
-    right: 30% ;
+   /* right: 25%;*/
     top: 10%  ;
   }
- 
+
 }
 
 /*---------------------------left part start---------------------------------------------*/
