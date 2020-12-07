@@ -146,6 +146,10 @@ display: inline;
     right: 30% ;
     top: 10%  ;
   }
+  .checkbox > input {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*---------------------------left part start---------------------------------------------*/
