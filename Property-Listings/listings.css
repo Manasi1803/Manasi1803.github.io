@@ -41,6 +41,35 @@ cursor: pointer;
 }
 
 /*-----------------------navbar end------------------------------------------->*/
+/*all media queries start*/
+@media (max-width: 576px){
+  .navbar-brand{
+    padding-left: 0!important;
+  }
+  .dropdown{
+    margin-left: -20px!important
+  }
+  .navbar-brand{
+  font-size: 18px;
+      }
+   .navbar-brand p{
+  font-size: 12px;  
+}
+
+}
+@media (max-width: 386px)and (min-width: 381px)  {
+   .dropdown{
+    margin-left: -25px!important
+  }
+
+}
+@media (max-width: 381px){
+  .dropdown{
+    margin-left: -35px!important
+  }
+}
+/*all media queries end*/
+
 /*---------------------------footer start---------------------------------------------*/
 
 footer{
