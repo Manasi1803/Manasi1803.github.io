@@ -264,6 +264,4 @@ select{
 select::-ms-expand{
   display: none;
 }
-option{
-  width: 30px;
-}
+
