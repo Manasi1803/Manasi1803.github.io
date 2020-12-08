@@ -135,6 +135,9 @@
 </div><!-----col-4(image) end----------->
 </div>
 <!-- carousel end -->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal" style="background-color:#2ECAB6; margin-bottom: 10px;">
+  Get Owner Details
+</button>
 
 
 <!-- Property details start -->
@@ -407,9 +410,9 @@ for (i = 0; i < acc.length; i++) {
 
 <!-- Sheltown help end -->
 
-<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal" style="margin: 20px; background-color:#2ECAB6">
-  Launch demo modal
-</button>
+<!-- <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal" style="margin: 20px; background-color:#2ECAB6">
+  Get Owner Details
+</button> -->
 
 
 
@@ -424,36 +427,34 @@ for (i = 0; i < acc.length; i++) {
 
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header card-header">
+        <h5 style="margin-top: 5px;">Get Owner Details</h5>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
         <div class="top">
 
-          <h5>Get Owner Details
-        <i style="display: inline;" class="far fa-people-arrows"></i>
-
-        <p>100% Genuine Owners</p>
-        <i style="display: inline;" class="far fa-people-arrows"></i>
+        <p style="font-size: 18px;">100% Genuine Owners<img src="https://img.icons8.com/material/24/000000/landlord.png" style="float: right;" /></p>
+        
       </div>
       <form>
        <div class="form-group">
-        <label for="mobileno">Mobile no</label>
-        <input type="tel" class="form-control" id="mobileno" aria-describedby="mobileno" placeholder="Enter email">
-                <button data-toggle="collapse-show" data-target="#demo">Get OTP</button>
+        <label for="mobileno" style="font-weight: bold; font-size: 23px;">Enter Mobile Number To Continue</label>
+        <input type="tel" class="form-control" id="mobileno" aria-describedby="mobileno" placeholder="Enter mobile Number">
+                <button data-toggle="collapse-show" data-target="#demo" class="btn btn-info" style="background-color: #2ecab6; margin-top: 5px;">Get OTP</button>
                 
 
 <br>
-        <label for="name">Name</label>
+        <!-- <label for="name">Name</label>
         <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Name">
 
         <label for="email1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> -->
       </div>
     </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info" style="background-color: #2ECAB6; color: white;">Get Owner Details</button>
       </div>
     </div>
 
