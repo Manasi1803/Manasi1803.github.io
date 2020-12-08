@@ -62,6 +62,10 @@
   .price{
     margin: 5px !important;
     margin-bottom: 5px !important;
+    width: 18rem !important;
+  }
+  .owner{
+    margin-top: 5px !important;
   }
   
   }
