@@ -226,7 +226,7 @@ display: none;}
 }
 .images img{
   height: 250px;
-  width: 100% !important;
+  /*width: 100% !important;*/
 
 }
 
@@ -253,4 +253,17 @@ display: none;}
   background-color: #f2f2f1;
   overflow: hidden;
   padding-top: 10px;
+}
+
+select{
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+}
+select::-ms-expand{
+  display: none;
+}
+option{
+  width: 30px;
 }
