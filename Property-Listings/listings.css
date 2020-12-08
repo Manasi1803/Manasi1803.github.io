@@ -212,7 +212,7 @@ select::-ms-expand{
   }
   }
 
-.bot-card:hover{
+/*.bot-card:hover{
   cursor: default;
  transition: transform 0.4s ease;
 }
@@ -221,7 +221,7 @@ select::-ms-expand{
 }
 .bot-card h6:hover{
   background-color: #e0f0ed;
-}
+}*/
 @media (max-width:760px){
   .bot-card:hover{
     transform: translate(0);
