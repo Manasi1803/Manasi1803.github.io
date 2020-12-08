@@ -60,7 +60,8 @@
     font-size: 12px;  
   }
   .price{
-    margin-left: 10px !important;
+    margin: 5px !important;
+    margin-bottom: 5px !important;
   }
   
   }
