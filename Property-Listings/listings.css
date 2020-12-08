@@ -59,6 +59,9 @@
      .navbar-brand p{
     font-size: 12px;  
   }
+  .price{
+    margin-left: 10px !important;
+  }
   
   }
   @media (max-width: 386px)and (min-width: 381px)  {
@@ -222,14 +225,14 @@ select::-ms-expand{
 .bot-card h6:hover{
   background-color: #e0f0ed;
 }*/
-@media (max-width:760px){
+/*@media (max-width:760px){
   .bot-card:hover{
     transform: translate(0);
   }
   .bot-card h6:hover{
     background-color: #fff;
   }
-}
+}*/
 
 .fea{
   display: grid;
