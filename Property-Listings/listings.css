@@ -151,6 +151,13 @@ select{
 select::-ms-expand{
   display: none;
 }
+/* form style */
+.ip:hover{
+  background-color: #EADCD9;
+}
+.ip::placeholder{
+  font-weight: bold;
+}
 
 
 /*---------------------------footer start---------------------------------------------*/
