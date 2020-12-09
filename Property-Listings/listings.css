@@ -60,9 +60,9 @@
     font-size: 12px;  
   }
   .price{
-    margin: 5px !important;
+   /* margin: 5px !important;*/
     margin-bottom: 10px !important;
-    width: 18.5rem !important;
+    width: 20rem !important;
     margin-left: 12px !important;
   }
   .owner{
@@ -74,30 +74,30 @@
      .dropdown{
       margin-left: -25px!important
     }
-    .price{
+    /*.price{
     margin: 5px !important;
     margin-bottom: 10px !important;
-    width: 18.5rem !important;
+ 
     margin-left: 12px !important;
    }
    .owner{
     margin-top: 10px !important;
-   }
+   }*/
   
   }
   @media (max-width: 381px){
     .dropdown{
       margin-left: -35px!important
     }
-    .price{
+  /*  .price{
     margin: 5px !important;
     margin-bottom: 10px !important;
-    width: 18.5rem !important;
+   
     margin-left: 12px !important;
    }
    .owner{
     margin-top: 10px !important;
-   }
+   }*/
   }
   /*all media queries end*/
 
