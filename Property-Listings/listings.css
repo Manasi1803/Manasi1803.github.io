@@ -156,7 +156,17 @@ select::-ms-expand{
 .ip::placeholder{
  font-weight: bold;
 }
-
+/*#circle {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 28px;
+  background: #2ECAB6;
+  color: white;
+  margin-left: 70px;
+}
+*/
 
 /*---------------------------footer start---------------------------------------------*/
 
