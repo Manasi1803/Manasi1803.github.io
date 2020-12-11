@@ -262,14 +262,15 @@
     </div>
 
 <!-- carousel end -->
-<button type="button " class="  m-1  btn btn-info" data-toggle="modal" data-target="#myModal" style="background-color:#2ECAB6;">
-  Get Owner Details
-</button>
 
 
-<!-- Property details start -->
+<!--  -->
+
+<div class="row">
+  <div class="col-9 mr-0 pr-0">
     <!-- Property details start -->
-    <div class="card mb-3 d-slid " style="width: 65%; margin: 15px;" >
+    <!-- Property details start -->
+    <div class="card mb-3 d-slid " style="  margin: 15px;" >
       <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; color: #fff;">
         <div style="display: flex;flex-direction: row;">
         <h4 class="mb-0 ">Ganga Residency Sheltown</h4>
@@ -334,20 +335,30 @@
 
 <!-- Know your new home start -->
 
-<div class="card new" style="margin: 15px; width: 65%">
+<div class="card new" style="margin: 15px;">
     <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; ">
      <h5 style="color: white; "> Know Your New Home <h5>
     </div>
     <div class="card-body">
+      <div class="table-responsive-sm">
         <table class="table table-striped table-bordered mydatatable" style="width: 100%;">
+
                 <tbody>
                     <tr>
-                        <td>Rental Category</td>
-                <td style="color: #23b6ae;">
+                        <td class="w-auto">Rental Category</td>
+                <td class="w-auto" style="color: #23b6ae;">
                   <center> <select>
             <option value="#">Semi-Furnished</option>
             <option value="#">Non-Furnished</option>
             <option value="#">Fully-Furnished</option>
+            </select></center>
+                </td>
+
+            <td class="w-auto" >Gym</td>
+                <td class="w-auto" style="color: #23b6ae;">
+                  <center> <select>
+            <option value="#">Yes</option>
+            <option value="#">No</option>
             </select></center>
                 </td>
                     </tr>
@@ -359,6 +370,13 @@
             <option value="#">1BHK</option>
             <option value="#">2BHK</option>
             <option value="#">3BHK</option>
+            </select></center>
+                </td>
+                 <td>Water Supply</td>
+                <td style="color: #23b6ae;">
+                  <center> <select>
+            <option value="#">Yes</option>
+            <option value="#">No</option>
             </select></center>
                 </td>
               </tr>
@@ -374,25 +392,49 @@
                     
             </select></center>
                 </td>
+                 <td>Gated Security</td>
+                <td style="color: #23b6ae;">
+                  <center> <select>
+            <option value="#">Yes</option>
+            <option value="#">No</option>
+            </select></center>
+                </td>
                           </tr>
                     <tr>
-                        <td>Property Age</td>
+                        <td>Bathroom</td>
                     <td style="color: #23b6ae;">
                   <center> <select>
-                      <option value="#">Below 5</option>
-                      <option value="#">5-10</option>
-                      <option value="#">10-15</option>
-                      <option value="#">Above 15</option>
+                      <option value="#">Yes</option>
+                      <option value="#">No</option>
                       
             </select></center>
                 </td>
-                  </tr>
+              
+                        <td>Meals</td>
+                    <td style="color: #23b6ae;">
+                  <center> <select>
+                    <option value="#">Not Included</option>
+                    <option value="#">Included</option>
+            </select></center>
+                </td>
+                 </tr>
+                  
                     <tr>
                         <td>Parking</td>
                         <td style="color: #23b6ae;">
                   <center> <select>
             <option value="#">Yes</option>
             <option value="#">No</option>
+            </select></center>
+                </td>
+                <td>Total Floors</td>
+                    <td style="color: #23b6ae;">
+                  <center> <select>
+                    <option value="#">4</option>
+                    <option value="#">5</option>
+                    <option value="#">6</option>
+                    <option value="#">7</option>
+
             </select></center>
                 </td>
                     </tr>
@@ -405,31 +447,7 @@
 
             </select></center>
                 </td>
-
-                    </tr>
-                    <tr>
-                        <td>Balcony</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#">Yes</option>
-            <option value="#">No</option>
-            </select></center>
-                </td>
-                      </tr>
-                    <tr>
-                        <td>PG Sharing Type</td>
-                      <td style="color: #23b6ae;">
-                  <center> <select>
-                <option value="#">Single</option>
-                <option value="#">Double</option>
-                <option value="#">Triple</option>
-                <option value="#">Quadraouple</option>
-
-            </select></center>
-                </td>
-                    </tr>
-                    <tr>
-                        <td>Tenant Preference</td>
+                    <td>Tenant Preference</td>
                     <td style="color: #23b6ae;">
                   <center> <select>
                     <option value="#">Male Only</option>
@@ -439,76 +457,29 @@
 
             </select></center>
                 </td>
-                 </tr>
-                 <tr>
-                        <td>Total Floors</td>
+                    </tr>
+                    <tr>
+                        <td>Balcony</td>
                     <td style="color: #23b6ae;">
                   <center> <select>
-                    <option value="#">4</option>
-                    <option value="#">5</option>
-                    <option value="#">6</option>
-                    <option value="#">7</option>
+            <option value="#">Yes</option>
+            <option value="#">No</option>
+            </select></center>
+                </td>
+                <td>PG Sharing Type</td>
+                      <td style="color: #23b6ae;">
+                  <center> <select>
+                <option value="#">Single</option>
+                <option value="#">Double</option>
+                <option value="#">Triple</option>
+                <option value="#">Quadraouple</option>
 
             </select></center>
                 </td>
-                 </tr>
-                 <tr>
-                        <td>Rental Agreement</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select>
-                    <option value="#">Not Mandatory</option>
-                    <option value="#">Mandatory</option>
-            </select></center>
-                </td>
-                 </tr>
-                 <tr>
-                        <td>Meals</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select>
-                    <option value="#">Not Included</option>
-                    <option value="#">Included</option>
-            </select></center>
-                </td>
-                 </tr>
-                 <tr>
-                        <td>Bathrooms</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select>
-                    <option value="#">No</option>
-                    <option value="#">Yes</option>
-            </select></center>
-                </td>
-                 </tr>
-                 <tr>
-                        <td>Gated Security</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select>
-                    <option value="#">Yes</option>
-                    <option value="#">No</option>
-            </select></center>
-                </td>
-                 </tr>
-                 <tr>
-                        <td>Water Supply</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select>
-                    <option value="#">Yes</option>
-                    <option value="#">No</option>
-            </select></center>
-                </td>
-                 </tr>
-                 <tr>
-                        <td>Gym</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select>
-                    <option value="#">Yes</option>
-                    <option value="#">No</option>
-            </select></center>
-                </td>
-                 </tr>
-
+                      </tr>
                 </tbody>
             </table>
+          </div>
 
 
 
@@ -517,7 +488,7 @@
   </div>
 
 <!-- privacy 2.0 start -->
-<div class="card new" style="margin: 15px; width: 65%">
+<div class="card new" style="margin: 15px; ">
     <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; ">
      <h5 style="color: white"> Privacy 2.0<h5>
     </div>
@@ -567,7 +538,7 @@
 <!-- privacy 2.0 end -->
 <!-------------------------Our Services part start----------------------->
     <!--<section class=" mx-lg-5 mx-md-5 mx-sm-5 mx-3 pb-5 mt-0" style="background-image: linear-gradient(27deg, #fff 50%, #2ecab6 50%);margin-top: 0px;">-->
-    <section class=" pb-0 " style="margin-top: 0px;background: linear-gradient(to right, #6ef7c3 4%, #2ecab6 100%); width: 65%; margin-left: 15px;">
+    <section class=" pb-0 " style="margin-top: 0px;background: linear-gradient(to right, #6ef7c3 4%, #2ecab6 100%);  margin-left: 15px;">
         <div class="header d-flex justify-content-center mb-4">
             <div style="padding-top:10px;">
                 <h3 class="text-center font-weight-bold  pt-4 wow slideInLeft" style="text-shadow: 5px 5px 10px #2ecab6;">
@@ -703,16 +674,101 @@
             </div>
     
         </div>
+         <!-------------------------Our Services part end--------------------------------------->
     
+    </div>
+    <div class="col-3 ml-0 pl-0">
+      <!-- price table -->
+     <div class="card mt-3" style="margin-right: 15px;">
+      <div class="card-header text-center" style="font-size: 20px; background-color: #2ECAB6; color: white; border:none;">
+        <h4>Get Owner Details</h4>
+        <a href="" style="color: white; font-size: small; ">LOGIN Is Required</a>
+    
+      </div>
+      <div class="card-body p-1" style="margin: 15px;">
+        <div class="card-text">
+          <div class="pmr  d-flex justify-content-between " style="border-bottom: #444 solid 1px;">
+            <div class="  rnt mb-1">
+            <h4 class="p-0 m-0" >&#8377;4500</h4>
+            <p class="p-0 m-0" style="font-size: small;" >(Per Month Rent)</p>
+          </div>
+          <h4 >-</h4>
+          <h5 >Negotiable</h5>
+          </div>
+          <div class="depo py-3" style="border-bottom:#444 solid 1px;">
+            <select class="p-0 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
+              <option value="1m">1 Month Deposit</option>
+              <option value="2m">2 Month Deposit</option>
+            </select>
+          </div>
+          <div class="owneridentity d-flex justify-content-between py-3" style="border-bottom:#444 solid 1px;">
+            <h6 class="p-0 m-0">Owner Identity verified </h6>
+            <i class="fa fa-check-circle mr-3" aria-hidden="true" style="font-size: medium;"></i>
+          </div>
+          <div class="prop-listed-by py-3" style="border-bottom:#444 solid 1px;">
+            <h6 class="p-0 m-0">Property Listed By <select class="p-0 " style="border: none; outline: none; background-color: #fff; " name="deposit" id="deposit">
+              <option value="1m">Owner</option>
+              <option value="2m">opt2</option>
+              <option value="2m">opt3</option>
+            </select> </h6>
+          </div>
+          <div class="contactd py-3">
+            <button type="button " class=" btn btn-info btn-block" data-toggle="modal" data-target="#myModal" style=" font-size: large !important; background-color:#2ECAB6; border: none; outline: none;">
+              Get Contact Details
+            </button> 
+          </div>
+    </div>
+    <a href="#" class="btn btn-info mt-lg-3 btn-block" style="background-color: #2ECAB6">Book Now</a>
+    </div> 
+  <!--price table end -->
+    </div>
+    <div class="card mt-3" style="margin-right: 15px;">
+      <div class="card-body p-0">
+        <div class="card-text">
+          <p class="text-center p-0" style="font-size: 20px;"><span class="mx-1" id="rn"></span><i class="fa fa-bolt mr-1" style="font-size: medium;" id="flashh" aria-hidden="true"></i> Peoples Are Viewing This Right Now</p>
         </div>
-    
-    
-    </section>
-    
-    
-    <!-------------------------Our Services part end--------------------------------------->
+      </div>
+      <style>
+        #flashh { 
+    -webkit-animation: breathing 2s ease-out infinite normal;
+    animation: breathing 2s ease-in-out infinite normal;
+    }
+
+
+@-webkit-keyframes breathing {
+  from{
+    color: rgb(160, 141, 141);
+  }
+  to{
+    color: #333;
+  }
+}
+
+@keyframes breathing {
+  from{
+    color: rgb(160, 141, 141);
+  }
+  to{
+    color: #333;
+  }
+ 
+}
+
+      </style>
+      <script>  
+  
+        // Function to generate random number  
+        function randomNumber(min, max) {  
+            return Math.floor(Math.random() * (max - min) + min); 
+        }   
+        // Function call 
+        document.getElementById("rn").innerHTML =randomNumber(1,20) ;
+        </script> 
+    </div>
+  </div>
+</div>
 <!-- Amenities start -->
-<div class="card mb-3 a-slid" style="width: 65%; margin-left: 15px" >
+<div class="card mb-3 a-slid" style="width: 75%; margin-left: 15px" >
     <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
       <h5 style="color: white">Amenities<h5>
     </div><br>
@@ -769,7 +825,7 @@
     </div>
     <!-- Amenities end -->
     <!-- Location Start --->
-<div class="card" style="width: 65%; margin: 15px;">
+<div class="card" style="width: 75%; margin: 15px;">
   <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
       <h5 style="color: white">Location<h5>
     </div>
@@ -800,28 +856,22 @@
   <p>For additional safety of everyone, our partners and their staff wears masks, uses sanitisers and maintains proper social distancing.</p>
 </div>
 <hr style="background-color: #2ECAB6; margin: 0;">
-
 <button class="accordion" style="background-color: white;">Covid Safety</button>
 <div class="panel">
   <p>During these hard times, we understand how important sanitisation and cleanliness are to you. We make sure sanitisation of Floors, Rooms and Linens using good quality disinfectants.
-
 </p>
 </div>
 <hr style="background-color: #2ECAB6; margin: 0;">
-
 <button class="accordion" >Flexible Payments
 </button>
 <div class="panel">
   <p>To book you just need to pay the booking amount now. Pay the rest while you move-in and this property accepts online payments through SheltOwn.</p>
 </div>
 <hr style="background-color: #2ECAB6; margin: 0;">
-
-
 <button class="accordion" style="background-color: white;" >Brokerage Free
 </button>
 <div class="panel">
   <p>We do not own this property, we are providing a platform to book it meanwhile making sure that each SheltOwn standards are being followed. We never charge any Brokerage from anyone.
-
 </p>
 </div>
 <hr style="background-color: #2ECAB6; margin: 0;">
@@ -1053,5 +1103,4 @@ for (i = 0; i < acc.length; i++) {
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
