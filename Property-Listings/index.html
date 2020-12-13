@@ -242,7 +242,7 @@
      <div class="card mt-3 mb-3">
       <div class="card-header text-center" style="font-size: 20px; background-color: #2ECAB6; color: white; border:none;">
         <h4>Get Owner Details</h4>
-        <a href="" style="color: white; font-size: small; ">LOGIN is Required</a>
+        <a href="" style="color: white; font-size: small; ">LOGIN Is Required</a>
     
       </div>
       <div class="card-body p-1" style="margin: 15px;">
@@ -250,10 +250,14 @@
           <div class="pmr  d-flex justify-content-between " style="border-bottom: #444 solid 1px;">
             <div class="  rnt mb-1">
             <h4 class="p-0 m-0" >&#8377;4500</h4>
-            <p class="p-0 m-0" style="font-size: small;" >(Per month rent)</p>
+            <p class="p-0 m-0" style="font-size: small;" >(Per Month Rent)</p>
           </div>
           <h4 >-</h4>
-          <h5 >Negotiable</h5>
+         <!--  <h5 >Negotiable</h5> -->
+         <select class="p-0 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
+              <option value="1m">Negotiable</option>
+              <option value="2m">Non-Negotiable</option>
+            </select>
           </div>
           <div class="depo py-3" style="border-bottom:#444 solid 1px;">
             <select class="p-0 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
@@ -262,14 +266,14 @@
             </select>
           </div>
           <div class="owneridentity d-flex justify-content-between py-3" style="border-bottom:#444 solid 1px;">
-            <h6 class="p-0 m-0">Owner Identity verified </h6>
+            <h6 class="p-0 m-0">Owner Identity Verified </h6>
             <i class="fa fa-check-circle mr-3" aria-hidden="true" style="font-size: medium;"></i>
           </div>
           <div class="prop-listed-by py-3" style="border-bottom:#444 solid 1px;">
-            <h6 class="p-0 m-0">Property listed by <select class="p-0 " style="border: none; outline: none; background-color: #fff; " name="deposit" id="deposit">
+            <h6 class="p-0 m-0">Property Listed By <select class="p-0 " style="border: none; outline: none; background-color: #fff; " name="deposit" id="deposit">
               <option value="1m">Owner</option>
-              <option value="2m">opt2</option>
-              <option value="2m">opt3</option>
+              <option value="2m">Manager</option>
+              <option value="2m">Buyer</option>
             </select> </h6>
           </div>
           <div class="contactd py-3">
