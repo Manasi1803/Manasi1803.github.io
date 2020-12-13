@@ -173,22 +173,23 @@
       <div class="card-header mb-0" style="border:none; background-color: #2ecab6; color: #fff;">
         <h4 class="mb-0 ">Ganga Residency Sheltown</h4>
         <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: #fff; font-size: medium; margin-top: 3px"></i><span style="font-size: large;">Kunadi, Kota, Rajasthan</span>
-        <p class="mb-0" style="font-size: 17px;">Sheltown Recommended</p>
+        <select  name="category" id="category" style="background-color: #2ECAB6; color: white">
+          <option class="opt" value="none" selected disabled >Residential Rent</option>
+          <option class="opt" value="none">Family Zoned</option>
+          <option class="opt" value="none">Female Only</option>
+          <option class="opt"z value="none">Male Only</option>
+        </select>
       </div>
-      <div class="card-body  mt-1 mb-1 px-1  pb-0 pt-0 d-flex justify-content-between" >
-        <select  name="category" id="category"    >
+      <div class="card-body  mt-1 mb-1 px-1  pb-0 pt-0 " >
+        <select  name="category" id="category" style="margin-left: 3px;"  >
           <option class="opt" value="none" selected disabled>Couple Privacy</option>
           <option class="opt" value="none">Family Zoned</option>
           <option class="opt" value="none">Female Only</option>
           <option class="opt" value="none">Male Only</option> 
         </select>
+        <p class="mb-0" style="font-size: 17px; margin-left: 3px;">Sheltown Recommended</p>
 
-        <select  name="category" id="category" >
-          <option class="opt" value="none" selected disabled>Residential Rent</option>
-          <option class="opt" value="none">Family Zoned</option>
-          <option class="opt" value="none">Female Only</option>
-          <option class="opt"z value="none">Male Only</option>
-        </select>
+        
       </div> 
 </div>
     <!-- prop details end -->
@@ -252,6 +253,7 @@
             <h4 class="p-0 m-0" >&#8377;4500</h4>
             <p class="p-0 m-0" style="font-size: small;" >(Per Month Rent)</p>
           </div>
+         
           <h4 >-</h4>
          <!--  <h5 >Negotiable</h5> -->
          <select class="p-0 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
