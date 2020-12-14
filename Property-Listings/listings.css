@@ -121,7 +121,7 @@ select {
 .content {
     position: absolute;
     /* Position the background text */
-    color: white;
+    color: #f1f1f1;
     /* Grey text */
     width: 100%;
     /* Full width */
@@ -163,6 +163,8 @@ background-color:#2ecab6 ;
     padding-top: 10px;
     color: white;
 }
+
+s
 
 select {
     /* for Firefox */
@@ -373,14 +375,16 @@ background-color: #e0f0ed;
 }
 
 .ame {
+    
     display: grid;
-    grid-row-gap: 10px;
+    grid-gap: 10px;
     width: auto;
     grid-template-columns: repeat(8, 0.125fr);
+   
 }
 
 @media (max-width:600px) {
-        .ame {
+    .ame {
         display: grid;
         grid-gap: 5 px;
         grid-template-columns: repeat(3, 0.3fr);
@@ -390,7 +394,6 @@ background-color: #e0f0ed;
         margin-right: 10px; 
     }
 }
-
 
 .fst {
     margin-top: 5px;
@@ -473,8 +476,3 @@ background-color: #e0f0ed;
         /* comments style end */
 
 /*---------------------------mob view part end---------------------------------------------*/
-/*.wifi,.tv,.bed,.guard,.pb,.chair p{
-  color:  #20B216; 
-
-}*/
-
