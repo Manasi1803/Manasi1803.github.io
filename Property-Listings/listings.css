@@ -121,7 +121,7 @@ select {
 .content {
     position: absolute;
     /* Position the background text */
-    color: black;
+    color: white;
     /* Grey text */
     width: 100%;
     /* Full width */
