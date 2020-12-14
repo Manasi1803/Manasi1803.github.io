@@ -212,6 +212,20 @@ select::-ms-expand {
  margin-left: 70px;
 }
 */
+/*gradient*/
+.viewing {
+    background: rgb(38,1,1);
+background: linear-gradient(0deg, rgba(38,1,1,0.9082983535210959) 0%, rgba(214,20,76,1) 100%);
+}
+/*.headings{
+    background: rgb(17,64,81);
+background: linear-gradient(0deg, rgba(17,64,81,1) 0%, rgba(110,207,239,1) 100%);
+
+}*/
+.rev,.headings{
+    background: rgb(21,117,151);
+background: linear-gradient(0deg, rgba(21,117,151,1) 0%, rgba(4,25,32,1) 100%);
+}
 
 
 /*------------our service part start------------------*/
