@@ -164,8 +164,6 @@ background-color:#2ecab6 ;
     color: white;
 }
 
-s
-
 select {
     /* for Firefox */
     -moz-appearance: none;
@@ -474,8 +472,8 @@ background-color: #e0f0ed;
         /* comments style end */
 
 /*---------------------------mob view part end---------------------------------------------*/
-.wifi,.tv,.bed,.guard,.pb,.chair p{
+/*.wifi,.tv,.bed,.guard,.pb,.chair p{
   color:  #20B216; 
 
-}
+}*/
 
