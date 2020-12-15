@@ -319,6 +319,10 @@ footer a {
 .mobview {
     display: none;
 }
+.grid-hotel{
+    display: flex;
+    flex-direction: column;
+}
 
 
 /*---------------------------footer end---------------------------------------------*/
@@ -517,6 +521,7 @@ background-color: #e0f0ed;
                 font-size: medium;
                 grid-template-columns: repeat(2,auto);
             }
+
         }
 
         .shadoww{
