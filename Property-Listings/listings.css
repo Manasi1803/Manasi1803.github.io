@@ -7,7 +7,19 @@
 
 body {
     background: #f1f3f6 !important;
+ 
 }
+body::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
+}
+
+
 
 input[type=checkbox],
 a {
@@ -214,19 +226,13 @@ select::-ms-expand {
 */
 /*gradient*/
 .viewing {
-    background: rgb(78,10,10);
-background: linear-gradient(0deg, rgba(78,10,10,1) 0%, rgba(209,62,67,1) 100%);
+    background: linear-gradient(to right,  #BD3F32 0% , #CB356B 100% );
+    border-radius: 5px;
 }
 
 .rev,.headings{
-    background: rgb(11,73,94);
-background: linear-gradient(0deg, rgba(11,73,94,1) 0%, rgba(32,196,175,1) 100%);
-}
-.texts{
-    background: -webkit-linear-gradient(#1c9ac6, #106157);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+    
+    background: linear-gradient(to right, #2ecab6 0%, #ccccff 100%);
 }
 /*.serv{
     background: rgb(61,164,199);
@@ -495,4 +501,52 @@ background-color: #e0f0ed;
         }
         /* comments style end */
 
+        /* footer link */
+        .links .card-body .container .grid-hotel{
+            display: grid;
+            grid-gap: 5px;
+            text-align: center;
+            grid-template-columns: repeat(6,0.166fr);
+        }
+        @media (max-width:600px){
+            .links .card-body .container .grid-hotel{
+                display: grid;
+              
+                text-align: center;
+                grid-gap: 5px;
+                font-size: medium;
+                grid-template-columns: repeat(2,auto);
+            }
+        }
+
+        .shadoww{
+            box-shadow: 2px 2px 2px 2px gray ;
+            border-radius: 5px;
+           
+        }
+
+        .reviewsm::-webkit-scrollbar {
+            width: 0.4em;
+        }
+        
+        .reviewsm::-webkit-scrollbar-thumb {
+          background-color:rgb(155, 148, 148);
+          border-radius: 5px;
+          border: none;
+        }
+
+        .review::-webkit-scrollbar {
+            width: 0.4em;
+        }
+        
+        .review::-webkit-scrollbar-thumb {
+          background-color:#2ECAB6;
+          border-radius: 5px;
+          border: none;
+        }
+
+        .watermark{
+            opacity: 0.6;
+            font-size: large;
+        }
 /*---------------------------mob view part end---------------------------------------------*/
