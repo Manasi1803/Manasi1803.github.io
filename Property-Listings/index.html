@@ -176,10 +176,10 @@
         <!-- Prop details -->
         <div class="card shadoww mb-3 mt-1">
           <div class="card-header py-0 mb-0" style="border:none;  ; background-color: #fff;">
-            <h4 class="mb-0 texts" style="font-weight: bold; color: black !important;">Ganga Residency Sheltown</h4>
-            <i class=" py-0 fa fa-map-marker-alt " aria-hidden="true" style="color:#666666; font-size: medium; margin-top: 3px"></i><span class="texts" style="font-size: large; font-weight: bold;">Kunadi, Kota, Rajasthan</span>
+            <h4 class="mb-0 texts " style="font-weight: bold; color: black !important;">Ganga Residency Sheltown</h4>
+              <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: #666666; font-size: medium; margin-top: 3px"></i><span class="texts" style="font-size: large; font-weight: bold; color: #666666;">Kunadi, Kota, Rajasthan</span>
             <br />
-            <select name="category" class="mt-1 px-2 mr-2 py-0" id="category" style=" border: solid 1px #e0e0e0; color:  black; background-color: #fff; font-weight: bold;">
+            <select name="category" class="mt-1 px-2 mr-2 py-0 mb-2" id="category" style=" border: solid 1px #e0e0e0; color:  black; background-color: #fff; font-weight: bold;">
               <option class="opt" value="none" selected  style=" color: black; background-color: #fff; ">Couple Privacy</option>
               <option class="others px-2" value="none">Family Zoned</option>
               <option class="others" value="none">Female Only</option>
@@ -242,7 +242,7 @@
             <!--  <a href="" style="color: white; font-size: small; ">LOGIN Is Required</a> -->
 
           </div>
-          <div class="card-body p-1" style="margin: 15px;">
+          <div class="card-body p-1 pb-1" style="margin: 15px;">
             <div class="card-text">
               <div class="pmr  d-flex justify-content-between " style="border-bottom: #444 solid 1px;">
                 <div class="  rnt mb-1">
@@ -280,7 +280,9 @@
                 </button>
               </div>
             </div>
-            <button aria-hidden="true" style="  font-size: large !important; border : none; color: white; " type="button" class="btn btn-success btn-block">Book Now </button>
+            
+            <button aria-hidden="true" data-placement="bottom" data-toggle="tooltip" title="Online Booking only Available for Premium Properties" style=" font-size: large !important; border : none;color: black;" type="button"
+              class="btn btn-success btn-block">Book Now </button>
           </div>
         </div>
         <!--price table end -->
@@ -999,13 +1001,13 @@
       <!-- right side -->
       <div class=" col-3 ml-0 pl-0">
         <!-- price table -->
-        <div class=" card mt-3" style="margin-right: 15px; height: 42.5%">
+        <div class=" card mt-3 " style="margin-right: 15px; ">
           <div class="card-header text-center headings" style="font-size: 18px; background-color: #2ECAB6; color: white; border:none;">
             <h4>Rental Details</h4>
             <!-- <a href="" style="color: white; font-size: small; ">LOGIN Is Required</a> -->
 
           </div>
-          <div class="card-body p-1" style="margin: 15px;">
+          <div class="card-body pb-1" style="margin: 15px;">
             <div class="card-text">
               <div class="pmr  d-flex justify-content-between " style="border-bottom: #444 solid 1px;">
                 <div class="  rnt mb-1">
@@ -1116,9 +1118,9 @@
         </div>
         <!-- peoples vieving end -->
         <!-- reviews -->
-        <div class=" card p-0 mt-3" style="margin-right: 15px">
+        <div class=" card p-0 mt-3" style="margin-right: 15px ">
           <h4 class="text-center py-2 rev" style="color: #fff;">Reviews</h4>
-          <div class="review">
+          <div class="review ">
 
             <div class="card-body mx-0 px-1 py-2 border-bottom border-top">
               <p class="card-text mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content. &quot;</p>
@@ -1700,41 +1702,70 @@
   <hr style=" background-color: #fff;">
 
   <!-- Footer Links -->
+  <style>
+    .tbbs ul {
+  justify-content: space-between;
+  display: flex;
+}
+.tbbs ul li >a{
+  color: white !important;
+}
+
+
+.grid-hotel >a:hover{
+color:#2ECAB6 !important;
+}
+.grid-hotel >a{
+  font-size: medium;
+}
+.nav-pills > li > a:hover,
+{
+  border-bottom: solid 1px #2ECAB6 !important;
+    border-radius: 0;
+}
+.nav-pills > li > a.active {
+    background-color: #333!important;
+    border-bottom: solid 2px #2ECAB6 !important;
+    border-radius: 0;
+}
+  </style>
+  <div class="tbbs" >
+    <div class=" name text-center mb-2 mt-0">
+      <h4>Quick Links</h4>
+      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+    </div>
+    <ul class="mx-2  nav nav-pills mb-4" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link  btn-sm active" id="ffr" data-toggle="pill" href="#fr" role="tab" aria-controls="fr" aria-selected="true">FLATS FOR RENT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn-sm" id="pfr" data-toggle="pill" href="#pr" role="tab" aria-controls="pr" aria-selected="false">PG FOR RENT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn-sm" id="cfr" data-toggle="pill" href="#cr" role="tab" aria-controls="cr" aria-selected="false">COUPLE FRIENDLY ROOMS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn-sm" id="msns" data-toggle="pill" href="#ms" role="tab" aria-controls="ms" aria-selected="true">MISCELLANIOUS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn-sm" id="apl" data-toggle="pill" href="#al" role="tab" aria-controls="al" aria-selected="false">APPLY FOR LOAN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn-sm" id="pll" data-toggle="pill" href="#pl" role="tab" aria-controls="pl" aria-selected="false">PURCHASE LAND</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn-sm" id="hfs" data-toggle="pill" href="#hs" role="tab" aria-controls="hs" aria-selected="false">HOUSE FOR SALE </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn-sm" id="inr" data-toggle="pill" href="#ins" role="tab" aria-controls="ins" aria-selected="false">INSURANCE</a>
+      </li>
+    </ul>
+  </div>
+ 
   <div class="links" style="font-size:18px; ">
     <div class="card-body pt-0">
-
-      <div class="container ">
-        <div class="name text-center mb-4 mt-0">
-          <h4>Sheltown Properties</h4>
-        </div>
+      <div class="container-fluid ">
          <!--  -->
-
-  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" id="ffr" data-toggle="pill" href="#fr" role="tab" aria-controls="fr" aria-selected="true">FLATS FOR RENT</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="pfr" data-toggle="pill" href="#pr" role="tab" aria-controls="pr" aria-selected="false">PG FOR RENT</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="cfr" data-toggle="pill" href="#cr" role="tab" aria-controls="cr" aria-selected="false">COUPLE FRIENDLY ROOMS</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link " id="msns" data-toggle="pill" href="#ms" role="tab" aria-controls="ms" aria-selected="true">MISCELLANIOUS</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="apl" data-toggle="pill" href="#al" role="tab" aria-controls="al" aria-selected="false">APPLY FOR LOAN</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="pll" data-toggle="pill" href="#pl" role="tab" aria-controls="pl" aria-selected="false">PURCHASE LAND</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="hfs" data-toggle="pill" href="#hs" role="tab" aria-controls="hs" aria-selected="false">HOUSE  FOR SALE </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="inr" data-toggle="pill" href="#ins" role="tab" aria-controls="ins" aria-selected="false">INSURANCE</a>
-    </li>
-  </ul>
   <div class="tab-content" id="pills-tabContent">
     <div class="tab-pane fade show active" id="fr" role="tabpanel" aria-labelledby="ffr">
       <div class="grid-hotel">
@@ -1793,9 +1824,9 @@
         <a href="">Flats For Rent In Sector 14 </a>
       </div>
     </div>
-    <div class="tab-pane fade show" id="pr" role="tabpanel" aria-labelledby="pfr">
+    <div class="tab-pane fade" id="pr" role="tabpanel" aria-labelledby="pfr">
       <div class="grid-hotel">
-                  <a href="">PG For Rent In Bangalore</a>
+        <a href="">PG For Rent In Bangalore</a>
         <a href="">PG For Rent In Koramangala</a>
         <a href="">PG For Rent In Marathahalli</a>
         <a href="">PG For Rent In HSR Layout</a>
@@ -1849,7 +1880,7 @@
         <a href="">PG For Rent In MG Road</a>
         <a href="">PG For Rent In Sector 14 </a>
     </div></div>
-    <div class="tab-pane fade show" id="cr" role="tabpanel" aria-labelledby="msns">
+    <div class="tab-pane fade " id="cr" role="tabpanel" aria-labelledby="cfr">
       <div class="grid-hotel">
         <a href="">Couple Friendly Rooms For Rent In Bangalore</a>
         <a href="">Couple Friendly Rooms For Rent In Koramangala</a>
@@ -1906,64 +1937,147 @@
         <a href="">Couple Friendly Rooms For Rent In Sector 14 </a>
       </div>
     </div>
-    <div class="tab-pane fade show" id="ms" role="tabpanel" aria-labelledby="apl">
+    <div class="tab-pane fade" id="ms" role="tabpanel" aria-labelledby="msns">
       <div class="grid-hotel">
-        <a href="">Miscellanious For Rent In Bangalore</a>
-        <a href="">Miscellanious For Rent In Koramangala</a>
-        <a href="">Miscellanious For Rent In Marathahalli</a>
-        <a href="">Miscellanious For Rent In HSR Layout</a>
-        <a href="">Miscellanious For Rent In Whitefield</a>
-        <a href="">Miscellanious For Rent In Indira Nagar</a>
-        <a href="">Miscellanious For Rent In Bellandur</a>
-        <a href="">Miscellanious For Rent In Chandra Layout</a>
-        <a href="">Miscellanious For Rent In J.P.Nagar</a>
-        <a href="">Miscellanious For Rent In BTM Layout</a>
-        <a href="">Miscellanious For Rent In Jayanagar</a>
-        <a href="">Miscellanious For Rent In Mumbai</a>
-        <a href="">Miscellanious For Rent In Andheri West</a>
-        <a href="">Miscellanious For Rent In Andheri East</a>
-        <a href="">Miscellanious For Rent In Malad West</a>
-        <a href="">Miscellanious For Rent In Navi Mumbai</a>
-        <a href="">Miscellanious For Rent In Powai</a>
-        <a href="">Miscellanious For Rent In Thane West</a>
-        <a href="">Miscellanious For Rent In Mira Road East</a>
-        <a href="">Miscellanious For Rent In Kharghar</a>
-        <a href="">Miscellanious For Rent In Kandivali East</a>
-        <a href="">Miscellanious For Rent In Bandra West</a>
-        <a href="">Miscellanious For Rent In Chennai</a>
-        <a href="">Miscellanious For Rent In Velachery</a>
-        <a href="">Miscellanious For Rent In Madipakkam</a>
-        <a href="">Miscellanious For Rent In Chromepet</a>
-        <a href="">Miscellanious For Rent In Medavakkam</a>
-        <a href="">Miscellanious For Rent In Choolaimedu</a>
-        <a href="">Miscellanious For Rent In Porur</a>
-        <a href="">Miscellanious For Rent In Pallikaranai</a>
-        <a href="">Miscellanious For Rent In Urapakkam</a>
-        <a href="">Miscellanious For Rent In Valasaravakkam</a>
-        <a href="">Miscellanious For Rent In Thiruvanmiyur</a>
-        <a href="">Miscellanious For Rent In Pune</a>
-        <a href="">Miscellanious For Rent In Hadapsar</a>
-        <a href="">Miscellanious For Rent In Kharadi</a>
-        <a href="">Miscellanious For Rent In Baner</a>
-        <a href="">Miscellanious For Rent In Kothrud</a>
-        <a href="">Miscellanious For Rent In Hinjawadi</a>
-        <a href="">Miscellanious For Rent In Wakad</a>
-        <a href="">Miscellanious For Rent In Wadgaon</a>
-        <a href="">Miscellanious For Rent In Aundh</a>
-        <a href="">Miscellanious For Rent In Pimple Saudagar</a>
-        <a href="">Miscellanious For Rent In Bavdhan</a>
-        <a href="">Miscellanious For Rent In Gurgaon</a>
-        <a href="">Miscellanious For Rent In Sector 31</a>
-        <a href="">Miscellanious For Rent In Palam Vihar</a>
-        <a href="">Miscellanious For Rent In Sushant Lok</a>
-        <a href="">Miscellanious For Rent In South City 1</a>
-        <a href="">Miscellanious For Rent In Sector 21</a>
-        <a href="">Miscellanious For Rent In Sector 15</a>
-        <a href="">Miscellanious For Rent In MG Road</a>
-        <a href="">Miscellanious For Rent In Sector 14 </a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
       </div>
     </div>
-    <div class="tab-pane fade show " id="pl" role="tabpanel" aria-labelledby="pll">
+    <div class="tab-pane fade " id="al" role="tabpanel" aria-labelledby="apl">
+      <div class="grid-hotel">
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+      </div>
+    </div>
+    <div class="tab-pane fade " id="pl" role="tabpanel" aria-labelledby="pll">
       <div class="grid-hotel">
         <a href="">Purchase Land In Bangalore</a>
         <a href="">Purchase Land In Koramangala</a>
@@ -2020,7 +2134,7 @@
         <a href="">Purchase Land In Sector 14 </a>
       </div>
     </div>
-    <div class="tab-pane fade show " id="hs" role="tabpanel" aria-labelledby="hfs">
+    <div class="tab-pane fade " id="hs" role="tabpanel" aria-labelledby="hfs">
       <div class="grid-hotel">
         <a href="">House For Sale In Bangalore</a>
         <a href="">House For Sale In Koramangala</a>
@@ -2077,120 +2191,74 @@
         <a href="">House For Sale In Sector 14 </a>
       </div>
     </div>
-    <div class="tab-pane fade show " id="ins" role="tabpanel" aria-labelledby="inr">
+    <div class="tab-pane fade " id="ins" role="tabpanel" aria-labelledby="inr">
       <div class="grid-hotel">
-        <a href="">Insurance In Bangalore</a>
-        <a href="">Insurance In Koramangala</a>
-        <a href="">Insurance In Marathahalli</a>
-        <a href="">Insurance In HSR Layout</a>
-        <a href="">Insurance In Whitefield</a>
-        <a href="">Insurance In Indira Nagar</a>
-        <a href="">Insurance In Bellandur</a>
-        <a href="">Insurance In Chandra Layout</a>
-        <a href="">Insurance In J.P.Nagar</a>
-        <a href="">Insurance In BTM Layout</a>
-        <a href="">Insurance In Jayanagar</a>
-        <a href="">Insurance In Mumbai</a>
-        <a href="">Insurance In Andheri West</a>
-        <a href="">Insurance In Andheri East</a>
-        <a href="">Insurance In Malad West</a>
-        <a href="">Insurance In Navi Mumbai</a>
-        <a href="">Insurance In Powai</a>
-        <a href="">Insurance In Thane West</a>
-        <a href="">Insurance In Mira Road East</a>
-        <a href="">Insurance In Kharghar</a>
-        <a href="">Insurance In Kandivali East</a>
-        <a href="">Insurance In Bandra West</a>
-        <a href="">Insurance In Chennai</a>
-        <a href="">Insurance In Velachery</a>
-        <a href="">Insurance In Madipakkam</a>
-        <a href="">Insurance In Chromepet</a>
-        <a href="">Insurance In Medavakkam</a>
-        <a href="">Insurance In Choolaimedu</a>
-        <a href="">Insurance In Porur</a>
-        <a href="">Insurance In Pallikaranai</a>
-        <a href="">Insurance In Urapakkam</a>
-        <a href="">Insurance In Valasaravakkam</a>
-        <a href="">Insurance In Thiruvanmiyur</a>
-        <a href="">Insurance In Pune</a>
-        <a href="">Insurance In Hadapsar</a>
-        <a href="">Insurance In Kharadi</a>
-        <a href="">Insurance In Baner</a>
-        <a href="">Insurance In Kothrud</a>
-        <a href="">Insurance In Hinjawadi</a>
-        <a href="">Insurance In Wakad</a>
-        <a href="">Insurance In Wadgaon</a>
-        <a href="">Insurance In Aundh</a>
-        <a href="">Insurance In Pimple Saudagar</a>
-        <a href="">Insurance In Bavdhan</a>
-        <a href="">Insurance In Gurgaon</a>
-        <a href="">Insurance In Sector 31</a>
-        <a href="">Insurance In Palam Vihar</a>
-        <a href="">Insurance In Sushant Lok</a>
-        <a href="">Insurance In South City 1</a>
-        <a href="">Insurance In Sector 21</a>
-        <a href="">Insurance In Sector 15</a>
-        <a href="">Insurance In MG Road</a>
-        <a href="">Insurance In Sector 14 </a>
-      </div>
-    </div>
-    <div class="tab-pane fade show " id="al" role="tabpanel" aria-labelledby="cfr">
-      <div class="grid-hotel">
-        <a href="">Apply For Land In Bangalore</a>
-        <a href="">Apply For Land In Koramangala</a>
-        <a href="">Apply For Land In Marathahalli</a>
-        <a href="">Apply For Land In HSR Layout</a>
-        <a href="">Apply For Land In Whitefield</a>
-        <a href="">Apply For Land In Indira Nagar</a>
-        <a href="">Apply For Land In Bellandur</a>
-        <a href="">Apply For Land In Chandra Layout</a>
-        <a href="">Apply For Land In J.P.Nagar</a>
-        <a href="">Apply For Land In BTM Layout</a>
-        <a href="">Apply For Land In Jayanagar</a>
-        <a href="">Apply For Land In Mumbai</a>
-        <a href="">Apply For Land In Andheri West</a>
-        <a href="">Apply For Land In Andheri East</a>
-        <a href="">Apply For Land In Malad West</a>
-        <a href="">Apply For Land In Navi Mumbai</a>
-        <a href="">Apply For Land In Powai</a>
-        <a href="">Apply For Land In Thane West</a>
-        <a href="">Apply For Land In Mira Road East</a>
-        <a href="">Apply For Land In Kharghar</a>
-        <a href="">Apply For Land In Kandivali East</a>
-        <a href="">Apply For Land In Bandra West</a>
-        <a href="">Apply For Land In Chennai</a>
-        <a href="">Apply For Land In Velachery</a>
-        <a href="">Apply For Land In Madipakkam</a>
-        <a href="">Apply For Land In Chromepet</a>
-        <a href="">Apply For Land In Medavakkam</a>
-        <a href="">Apply For Land In Choolaimedu</a>
-        <a href="">Apply For Land In Porur</a>
-        <a href="">Apply For Land In Pallikaranai</a>
-        <a href="">Apply For Land In Urapakkam</a>
-        <a href="">Apply For Land In Valasaravakkam</a>
-        <a href="">Apply For Land In Thiruvanmiyur</a>
-        <a href="">Apply For Land In Pune</a>
-        <a href="">Apply For Land In Hadapsar</a>
-        <a href="">Apply For Land In Kharadi</a>
-        <a href="">Apply For Land In Baner</a>
-        <a href="">Apply For Land In Kothrud</a>
-        <a href="">Apply For Land In Hinjawadi</a>
-        <a href="">Apply For Land In Wakad</a>
-        <a href="">Apply For Land In Wadgaon</a>
-        <a href="">Apply For Land In Aundh</a>
-        <a href="">Apply For Land In Pimple Saudagar</a>
-        <a href="">Apply For Land In Bavdhan</a>
-        <a href="">Apply For Land In Gurgaon</a>
-        <a href="">Apply For Land In Sector 31</a>
-        <a href="">Apply For Land In Palam Vihar</a>
-        <a href="">Apply For Land In Sushant Lok</a>
-        <a href="">Apply For Land In South City 1</a>
-        <a href="">Apply For Land In Sector 21</a>
-        <a href="">Apply For Land In Sector 15</a>
-        <a href="">Apply For Land In MG Road</a>
-        <a href="">Apply For Land In Sector 14 </a>
-
-
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
+        <a href="">Hotels near me</a>
       </div>
     </div>
   </div>
@@ -2198,8 +2266,6 @@
       </div>
     </div>
   </div>
-
-
   <!-- Footer Links -->
 
   <!-- Copyright -->
