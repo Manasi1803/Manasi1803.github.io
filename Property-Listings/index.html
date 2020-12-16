@@ -56,7 +56,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse lateral-left" id="navbarSupportedContent">
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2 mr-md-0 mr-lg-0" type="search" placeholder="Search Locality" aria-label="Search " style="border-radius: 0!important">
           <button class="btn btn-search btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -152,14 +152,18 @@
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
+          <!-- share text -->
+           <h5  class="sharetitle" style="display: none !important;">Sheltown.in</h5>
+           <h5 class="sharetext" style="display: none !important;">Sheltown &quot;Live like you own it&quot;[Refer and Earn]. (or any other promo here) <br> </h5>
+         <!-- share text end -->
           <!-- mv share  -->
           <script>
             function onClickShare() {
               if (navigator.share) {
                 navigator.share({
-                    title: 'Sheltown',
-                    text: 'Sheltown',
-                    url: ''
+                    title: document.querySelector('h5.sharetitle').textContent,
+                    text: document.querySelector('h5.sharetext').textContent,
+                    url: 'https://sheltown.in/YouOwnIt'
                   })
                   .then(() => console.log('share'))
                   .catch((error) => console.log('Share Error', error));
@@ -175,17 +179,17 @@
         <!-- img end -->
         <!-- Prop details -->
         <div class="card shadoww mb-3 mt-1">
-          <div class="card-header py-0 mb-0" style="border:none;  ; background-color: #fff;">
-            <h4 class="mb-0 texts " style="font-weight: bold; color: black !important;">Ganga Residency Sheltown</h4>
-              <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: #666666; font-size: medium; margin-top: 3px"></i><span class="texts" style="font-size: large; font-weight: bold; color: #666666;">Kunadi, Kota, Rajasthan</span>
+          <div class="card-header py-0 mb-1" style="border:none;  ; background-color: #fff;">
+            <h5 class="mb-0 texts" style="font-weight: bold; color: black !important;font-size: small;">Ganga Residency Sheltown</h5>
+            <i class=" py-0 fa fa-map-marker-alt " aria-hidden="true" style="color:#666666; font-size: medium; margin-top: 3px"></i><span class="texts" style="font-size: small; font-weight: bold;color:#666666;">Kunadi, Kota, Rajasthan</span>
             <br />
-            <select name="category" class="mt-1 px-2 mr-2 py-0 mb-2" id="category" style=" border: solid 1px #e0e0e0; color:  black; background-color: #fff; font-weight: bold;">
+            <select name="category" class="mt-1 px-2 mr-2 py-0" id="category" style=" border: solid 1px #e0e0e0; color:  black; background-color: #fff; font-size: small; font-weight: bold;">
               <option class="opt" value="none" selected  style=" color: black; background-color: #fff; ">Couple Privacy</option>
               <option class="others px-2" value="none">Family Zoned</option>
               <option class="others" value="none">Female Only</option>
               <option class="others" value="none">Male Only</option>
             </select>
-            <select name="category" class="px-2" id="category" style=" background-color:#fdf2de; color:#f3af31; font-weight: bold;">
+            <select name="category" class="px-2" id="category" style=" font-size: small;  background-color:#fdf2de; color:#f3af31; font-weight: bold;">
               <option value="none" selected >Residential Rent</option>
               <option class="opt" value="none">Commercial Rent</option>
             </select>
@@ -242,7 +246,7 @@
             <!--  <a href="" style="color: white; font-size: small; ">LOGIN Is Required</a> -->
 
           </div>
-          <div class="card-body p-1 pb-1" style="margin: 15px;">
+          <div class="card-body p-1" style="margin: 15px;">
             <div class="card-text">
               <div class="pmr  d-flex justify-content-between " style="border-bottom: #444 solid 1px;">
                 <div class="  rnt mb-1">
@@ -270,8 +274,8 @@
               <div class="prop-listed-by py-3" style="border-bottom:#444 solid 1px;">
                 <h6 class="p-0 m-0">Property Listed By <select class="p-0 " style="border: none; outline: none; background-color: #fff; " name="deposit" id="deposit">
                     <option value="1m">Owner</option>
-                    <option value="2m">Manager</option>
-                    <option value="2m">Buyer</option>
+                    <option value="2m">Agent</option>
+                    <option value="2m">Third Party</option>
                   </select> </h6>
               </div>
               <div class="contactd py-3">
@@ -280,11 +284,25 @@
                 </button>
               </div>
             </div>
-            
             <button aria-hidden="true" data-placement="bottom" data-toggle="tooltip" title="Online Booking only Available for Premium Properties" style=" font-size: large !important; border : none;color: black;" type="button"
               class="btn btn-success btn-block">Book Now </button>
           </div>
         </div>
+        <!-- info modal -->
+ <!-- <div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body mb-0 pb-0">
+        <p class="mb-1">Online Booking only Available for Premium Properties</p>
+        
+      </div>
+      <div class="modal-footer cls m-0 p-0">
+        <button type="button" class="btn btn-primary btn-sm btn-block w-90" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+ </div>  -->
+        <!-- info modal end -->
         <!--price table end -->
         <!-- know your new home -->
         <div class="shadoww card new mb-3">
@@ -1034,8 +1052,8 @@
               <div class="prop-listed-by py-3" style="border-bottom:#444 solid 1px;">
                 <h6 class="p-0 m-0">Property Listed By <select class="p-0 " style="border: none; outline: none; background-color: #fff; " name="deposit" id="deposit">
                     <option value="1m">Owner</option>
-                    <option value="2m">Manager</option>
-                    <option value="2m">Buyer</option>
+                    <option value="2m">Agent</option>
+                    <option value="2m">Third Party</option>
                   </select> </h6>
               </div>
               <div class="contactd py-3">
@@ -1703,6 +1721,7 @@
 
   <!-- Footer Links -->
   <style>
+   
     .tbbs ul {
   justify-content: space-between;
   display: flex;
@@ -1711,15 +1730,13 @@
   color: white !important;
 }
 
-
 .grid-hotel >a:hover{
 color:#2ECAB6 !important;
 }
 .grid-hotel >a{
-  font-size: medium;
+  font-size: small;
 }
-.nav-pills > li > a:hover,
-{
+.nav-pills > li > a:hover{
   border-bottom: solid 1px #2ECAB6 !important;
     border-radius: 0;
 }
@@ -1729,10 +1746,10 @@ color:#2ECAB6 !important;
     border-radius: 0;
 }
   </style>
-  <div class="tbbs" >
+  <div class="tbbs " >
     <div class=" name text-center mb-2 mt-0">
       <h4>Quick Links</h4>
-      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+      <hr class="teal accent-3  mt-0 d-inline-block mx-auto" style="width: 70px;">
     </div>
     <ul class="mx-2  nav nav-pills mb-4" id="pills-tab" role="tablist">
       <li class="nav-item">
@@ -1762,11 +1779,11 @@ color:#2ECAB6 !important;
     </ul>
   </div>
  
-  <div class="links" style="font-size: 12px;">
+  <div class="links" style="font-size:18px; ">
     <div class="card-body pt-0">
-      <div class="container-fluid ">
+      <div class="container-fluid px-0 ">
          <!--  -->
-  <div class="tab-content" id="pills-tabContent">
+  <div class="tab-content" style="overflow: scroll; max-height:20rem;" id="pills-tabContent">
     <div class="tab-pane fade show active" id="fr" role="tabpanel" aria-labelledby="ffr">
       <div class="grid-hotel">
         <a href="">Flats For Rent In Bangalore</a>
@@ -1882,200 +1899,157 @@ color:#2ECAB6 !important;
     </div></div>
     <div class="tab-pane fade " id="cr" role="tabpanel" aria-labelledby="cfr">
       <div class="grid-hotel">
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Bangalore</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Koramangala</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Marathahalli</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In HSR Layout</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Whitefield</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Indira Nagar</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Bellandur</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Chandra Layout</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In J.P.Nagar</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In BTM Layout</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Jayanagar</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Mumbai</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Andheri West</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Andheri East</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Malad West</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Navi Mumbai</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Powai</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Thane West</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Mira Road East</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Kharghar</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Kandivali East</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Bandra West</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Chennai</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Velachery</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Madipakkam</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Chromepet</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Medavakkam</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Choolaimedu</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Porur</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Pallikaranai</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Urapakkam</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Valasaravakkam</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Thiruvanmiyur</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Pune</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Hadapsar</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Kharadi</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Baner</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Kothrud</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Hinjawadi</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Wakad</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Wadgaon</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Aundh</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Pimple Saudagar</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Bavdhan</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Gurgaon</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Sector 31</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Palam Vihar</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Sushant Lok</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In South City 1</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Sector 21</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Sector 15</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In MG Road</a>
-        <a href="" style="font-size: 12px;">Couple Friendly Rooms In Sector 14 </a>
+        <a href="">Couple Friendly Rooms In Bangalore</a>
+        <a href="">Couple Friendly Rooms In Koramangala</a>
+        <a href="">Couple Friendly Rooms In Marathahalli</a>
+        <a href="">Couple Friendly Rooms In HSR Layout</a>
+        <a href="">Couple Friendly Rooms In Whitefield</a>
+        <a href="">Couple Friendly Rooms In Indira Nagar</a>
+        <a href="">Couple Friendly Rooms In Bellandur</a>
+        <a href="">Couple Friendly Rooms In Chandra Layout</a>
+        <a href="">Couple Friendly Rooms In J.P.Nagar</a>
+        <a href="">Couple Friendly Rooms In BTM Layout</a>
+        <a href="">Couple Friendly Rooms In Jayanagar</a>
+        <a href="">Couple Friendly Rooms In Mumbai</a>
+        <a href="">Couple Friendly Rooms In Andheri West</a>
+        <a href="">Couple Friendly Rooms In Andheri East</a>
+        <a href="">Couple Friendly Rooms In Malad West</a>
+        <a href="">Couple Friendly Rooms In Navi Mumbai</a>
+        <a href="">Couple Friendly Rooms In Powai</a>
+        <a href="">Couple Friendly Rooms In Thane West</a>
+        <a href="">Couple Friendly Rooms In Mira Road East</a>
+        <a href="">Couple Friendly Rooms In Kharghar</a>
+        <a href="">Couple Friendly Rooms In Kandivali East</a>
+        <a href="">Couple Friendly Rooms In Bandra West</a>
+        <a href="">Couple Friendly Rooms In Chennai</a>
+        <a href="">Couple Friendly Rooms In Velachery</a>
+        <a href="">Couple Friendly Rooms In Madipakkam</a>
+        <a href="">Couple Friendly Rooms In Chromepet</a>
+        <a href="">Couple Friendly Rooms In Medavakkam</a>
+        <a href="">Couple Friendly Rooms In Choolaimedu</a>
+        <a href="">Couple Friendly Rooms In Porur</a>
+        <a href="">Couple Friendly Rooms In Pallikaranai</a>
+        <a href="">Couple Friendly Rooms In Urapakkam</a>
+        <a href="">Couple Friendly Rooms In Valasaravakkam</a>
+        <a href="">Couple Friendly Rooms In Thiruvanmiyur</a>
+        <a href="">Couple Friendly Rooms In Pune</a>
+        <a href="">Couple Friendly Rooms In Hadapsar</a>
+        <a href="">Couple Friendly Rooms In Kharadi</a>
+        <a href="">Couple Friendly Rooms In Baner</a>
+        <a href="">Couple Friendly Rooms In Kothrud</a>
+        <a href="">Couple Friendly Rooms In Hinjawadi</a>
+        <a href="">Couple Friendly Rooms In Wakad</a>
+        <a href="">Couple Friendly Rooms In Wadgaon</a>
+        <a href="">Couple Friendly Rooms In Aundh</a>
+        <a href="">Couple Friendly Rooms In Pimple Saudagar</a>
+        <a href="">Couple Friendly Rooms In Bavdhan</a>
+        <a href="">Couple Friendly Rooms In Gurgaon</a>
+        <a href="">Couple Friendly Rooms In Sector 31</a>
+        <a href="">Couple Friendly Rooms In Palam Vihar</a>
+        <a href="">Couple Friendly Rooms In Sushant Lok</a>
+        <a href="">Couple Friendly Rooms In South City 1</a>
+        <a href="">Couple Friendly Rooms In Sector 21</a>
+        <a href="">Couple Friendly Rooms In Sector 15</a>
+        <a href="">Couple Friendly Rooms In MG Road</a>
+        <a href="">Couple Friendly Rooms In Sector 14 </a>
       </div>
-
     </div>
     <div class="tab-pane fade" id="ms" role="tabpanel" aria-labelledby="msns">
       <div class="grid-hotel">
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
+        <a href="">Packers and Movers</a>
+        <a href="">Flats for Rent </a>
+        <a href="">Office Space for Rent</a>
+        <a href="">Coworking Space for Rent</a>
+        <a href="">Office Space for Sale</a>
+        <a href="">Electrician Services</a>
+        <a href="">Carpentry Services</a>
+        <a href="">Cleaning Services</a>
+        <a href="">Plumbing Services</a>
+        <a href="">Property Management</a>
+        <a href="">Home Interiors</a>
+        <a href="">Interior Designers</a>
+        <a href="">New Projects</a>
+        <a href="">Packers and Movers-local shifting</a>
+        <a href="">Godown for Rent</a>
+        <a href="">Industrial Building for Sale</a>
+        <a href="">Home Services</a>
+        <a href="">Paying Guest</a>
+        <a href="">Buy / Sell Property Questions</a>
+        <a href="">Home Services Questions</a>
+        <a href="">Home Loan Eligibility Check</a>
+        <a href="">Rent Services Questions</a>
+        <a href="">Home Decor Ideas</a>
+        <a href="">Safety Rules at Home</a>
+        <a href="">Akshay Kumar House</a>
+        <a href="">Tallest Buildings in Mumbai</a>
+        <a href="">Wall Mounted Dining Table</a>
+        <a href="">Premium Properties</a>
+        <a href="">Affordable Properties</a>
+        <a href="">Under Construction Properties</a>
+        <a href="">Rowhouse Properties</a>
+        <a href="">Bungalows</a>
+        <a href="">Luxurious Properties</a>
+        <a href="">Holiday Properties</a>
+        <a href="">Farmhouse</a>
+        <a href="">Penthouses</a>
+        <a href="">Studio Apartments</a>
+        <a href="">Duplex Apartments</a>
+        <a href="">Shooting Locations</a>
+        <a href="">Nearby Hotels</a>
+        <a href="">Nearby Hospitals</a>
+        <a href="">Nearby Schools</a>
+        <a href="">Nearby Railways Stations</a>
+        <a href="">Nearby Malls</a>
+        <a href="">Nearby Theatres</a>
+        <a href="">Nearby Markets</a>
+        <a href="">Explore Neighbourhood</a>
+        <a href="">City Maps</a>
       </div>
     </div>
     <div class="tab-pane fade " id="al" role="tabpanel" aria-labelledby="apl">
       <div class="grid-hotel">
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
+        <a href="">Bank of Baroda Home Loan</a>
+        <a href="">Bank of India Home Loan</a>
+        <a href="">State Bank of India Home Loan</a>
+        <a href="">ICICI Bank Home Loan</a>
+        <a href="">HDFC Bank Home Loan</a>
+        <a href="">PNB Housing Finance Loan</a>
+        <a href="">Kotak Bank Home Loan</a>
+        <a href="">Andhra Bank Home Loan</a>
+        <a href="">Axis Bank Home Loan</a>
+        <a href="">Dena Bank Home Loan</a>
+        <a href="">Saraswat Bank Home Loan</a>
+        <a href="">Home loans by Other Bank</a>
+        <a href="">Bajaj Housing Finance Limited</a>
+        <a href="">Sundaram Home Finance Limited</a>
+        <a href="">L&T Housing Finance Limited</a>
+        <a href="">Cholamandalam HFL</a>
+        <a href="">Magma Housing Finance</a>
+        <a href="">DHFL Home Loan</a>
+        <a href="">Gruh Finance Home Loan</a>
+        <a href="">IDBI Home Loan</a>
+        <a href="">LIC Housing Finance Loan</a>
+        <a href="">NRI Home Loan</a>
+        <a href="">Pradhan Mantri Awas Yojana</a>
+        <a href="">Top Housing Finance Companies</a>
+        <a href="">GST Calculator</a>
+        <a href="">Home Loan EMI Calculator</a>
+        <a href="">Home Loan Transfer</a>
+        <a href="">Home Loan Balance Transfer</a>
+        <a href="">Home Loan Calculator</a>
+        <a href="">Home Loan Documents</a>
+        <a href="">Home Loan Eligibility</a>
+        <a href="">Home Loan Insurance</a>
+        <a href="">Home Loan Interest Rate</a>
+        <a href="">Home Loan Process</a>
+        <a href="">Home Loan Tax Benefit</a>
+        <a href="">PreApproved Loans</a>
+        <a href="">Private Employees</a>
+        <a href="">Government Employees</a>
+        <a href="">Self Employed</a>
+        <a href="">Cash Income </a>
+        <a href="">Short Term Loan</a>
+        <a href="">Interest Rates</a>
       </div>
     </div>
     <div class="tab-pane fade " id="pl" role="tabpanel" aria-labelledby="pll">
@@ -2194,6 +2168,14 @@ color:#2ECAB6 !important;
     </div>
     <div class="tab-pane fade " id="ins" role="tabpanel" aria-labelledby="inr">
       <div class="grid-hotel">
+        <a href="">Professional Liability Insurance</a>
+        <a href="">General Liability</a>
+        <a href="">Business Owner’s Policy</a>
+        <a href="">Errors And Omissions Insurance</a>
+        <a href="">Worker's Compensation Insurance</a>
+        <a href="">Cyber Liability Insurance</a>
+        <a href="">Property Insurance</a>
+        <a href="">Employee Dishonesty</a>
         <a href="">Hotels near me</a>
         <a href="">Hotels near me</a>
         <a href="">Hotels near me</a>
@@ -2222,44 +2204,7 @@ color:#2ECAB6 !important;
         <a href="">Hotels near me</a>
         <a href="">Hotels near me</a>
         <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
-        <a href="">Hotels near me</a>
+
       </div>
     </div>
   </div>
