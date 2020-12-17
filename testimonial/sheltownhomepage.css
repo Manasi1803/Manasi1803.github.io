@@ -329,10 +329,11 @@ input[type=file]{
 /****************************signup modal end**************************/
 
 .border{
-    width: 160px;
+    width: 140px;
     height: 5px;
     background: #2ecab6;
-    margin: 10px auto;
+    margin: 8px auto;
+    
 }
 
 
@@ -358,5 +359,6 @@ input[type=file]{
 	.border{
 		margin: 0 auto;
 		width: 107px;
+
 	}
 }
