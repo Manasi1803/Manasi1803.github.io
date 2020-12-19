@@ -168,6 +168,15 @@ a {
   .mfooter{
     display:none;
 }
+.schedule::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+.schedule::-webkit-scrollbar-thumb {
+  background-color:rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
+}
 .md-sec::-webkit-scrollbar {
     width: 0px; /* Remove scrollbar space for middle secction */
 }
