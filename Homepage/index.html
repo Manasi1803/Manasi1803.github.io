@@ -20,7 +20,7 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-  <div class="header" style="margin-bottom: 4.8rem; ">
+  <div class="header header1" style="margin-bottom: 4.8rem; ">
     <nav class="navbar navbar-expand-lg  fixed-top n1" style="background-color: #111;">
       <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
@@ -90,11 +90,67 @@
 
 
   <!--header end---------->
+  <!----------------------mob header---------------------------------->
+  <div class="header header2" style="margin-bottom: 4.8rem;">
+    <nav class="navbar navbar-dark bg-dark justify-content-between fixed-top">
+  <div style="width: 60%;"class="d-flex">
+    <div class="d-flex justify-content-center align-items-center"onclick="openNav()">
+      <img src="images/boy.png"style="width:40px;height:auto;background:#fff;"class="rounded-circle">
+    </div>
+     <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
+        <p>Live Like You Own It</p>
+      </a>
+    </div>
+  <div>
+    <ul><li class="nav-item mr-4">
+            <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
+              </a>      
+          </li></ul>
+  </div>
+</nav>
+</div>
+<div id="mySidenav" class="sidenav ">
+  <div>
+  <div class="d-flex justify-content-between align-items-center  close1 px-3"style="border-bottom: 1px solid white;">
+    <div style="color: white;font-size: 22px;">Account Information</div>
+    <div><a href="javascript:void(0)" class="closebtn p-0 my-0" onclick="closeNav()">&times;</a></div>
+  </div>
+  <div class="text-left p-4"style="border-bottom: 1px solid white;">
+    <img src="images/boy.png"style="width: 20%;height: auto;background: #fff;"class="rounded-circle">
+    <div>Priyanka</div>
+    <div>Grade-8th</div>
+    <div>Delhi Public School</div>
+    <div>city, state, country</div>
+  </div>
+  
+</div>
+  <div class="menu1 p-4">
+    <div class="">@Priyanka_2480</div>
+    <div class=""><span><a href=""> 200 connections</a></span>&nbsp;<span><a href=""> 60 friends</a></span></div>
+  <div class="menu" ><a href="#"><i class="fa fa-user-circle mr-2" aria-hidden="true "></i>Profile</a>
+  <a href="#"><i class="fa fa-book mr-2" aria-hidden="true" mr-2></i>Academics</a>
+  <a href="#"><i class="fa fa-building mr-2" aria-hidden="true "></i>Campus</a>
+  <a href="#"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
+  <a href="#"><i class="fa fa-cog mr-2" aria-hidden="true"></i>Setting & Privacy</a>
+  <a href="#"><i class="fa fa-clock mr-2" aria-hidden="true"></i>24/7 Help</a>
+  <a href="#"><i class="fa fa-power-off mr-2" aria-hidden="true"></i>Logout</a></div>
+</div>
+</div>
+  <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+  <!----------------------mob header end---------------------------------->
   <!-- container -->
   <div class="container-fluid ">
     <div class="row">
         <!--- left side -->
-      <div class="col-3 pr-0 ">
+      <div class="col-3 pr-0 left">
   <div class="card shadow">
     <h5 class="card-header rounded-top">Work</h5>
     <div class="card-body view">
@@ -140,8 +196,8 @@
       </div>
   <!-- left side end -->
   <!-- middle sec -->
-      <div class="col-6 px-0 md-sec" style="height: 100vh; overflow-y: scroll;">
-        <div class="card shadow">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 px-0 md-sec" style="height: 100vh; overflow-y: scroll;">
+        <div class="card shadow c1">
           <div class="card-body pb-1 pt-3">
             <div class="shrep pb-3">
               <button class=" btn btn-block border speak-loud text-left" ><span><i class="far fa-edit fa-lg" style="color: #5E5E5E;"></i></span><span class="pl-2" style="color: #7C7C7C;">Speak Out Louder</span> </button>
@@ -159,10 +215,10 @@
         <div class="card shadow">
           <div class="card-body pb-2 mx-2">
             <div class="row mb-3 ">
-              <div class="col-2 pr-0">
+              <div class="col-lg-2 col-sm-2 col-md-2 col-3 pr-0">
                 <i class="fas fa-user-circle fa-3x pl-0 "></i>
               </div>
-              <div class=" col-10 pl-lg-0 pl-2 pl-sm-2">
+              <div class=" col-lg-10 col-md-10 col-sm-10 col-9 pl-lg-0 pl-2 pl-sm-2">
                 <div class="row">
                   <span class="name">Priyanka Desai</span> 
                 </div>
@@ -204,10 +260,10 @@
         <div class="card shadow">
           <div class="card-body pb-2 mx-2">
             <div class="row mb-3 ">
-              <div class="col-2 pr-0">
+              <div class="col-lg-2 col-sm-2 col-md-2 col-3 pr-0">
                 <i class="fas fa-user-circle fa-3x pl-0 "></i>
               </div>
-              <div class=" col-10 pl-lg-0 pl-2 pl-sm-2">
+              <div class="col-lg-10 col-md-10 col-sm-10 col-9 pl-lg-0 pl-2 pl-sm-2">
                 <div class="row">
                   <span class="name">Priyanka Desai</span> 
                 </div>
@@ -249,7 +305,7 @@
       </div>
       <!-- middle sec end -->
       <!-- right side start -->
-  <div class="col-3 pl-0">
+  <div class="col-3 pl-0 right">
   <div class="card shadow ">
     <h5 class="card-header">Today's Headlines</h5>
     <div class="card-body view">
@@ -380,12 +436,62 @@
     <div class="signin">
       <button type="button" class="btn btn-outline-secondary btn-block">Sign In</button>
       <p style="color: white">New?<a href="#" style="color:white">&nbsp;Sign Up</a></p>
-    </div>
+    </div></div>
 
+</form>
 </div>
 </div>
 </div>
+
 <!-- modal for login end -->
+<!-------footer for mob view start------------>
+<div class="mfooter ">
+  <nav class="navbar navbar-light  bg-dark"id="navbar1"style="color: white!important;">
+    <ul class=" d-flex justify-content-between "style="width: 100%;">
+          <li class="nav-item mx-2 text-center">
+            <a href="">
+              <div><i class="fa fa-home" aria-hidden="true"></i></div>
+              <div>Home</div>
+            </a> 
+           
+          </li>
+          <li class="nav-item mx-2 text-center">
+            <a href=""><i class="fa fa-tablet" aria-hidden="true"></i>
+            <div>E-book</div></a>      
+          </li>
+          <li class="nav-item mx-2 text-center">
+             <a href=""class="plus">
+              <i class="fas fa-plus d-flex align-items-center justify-content-center p-2"></i>
+              </a> 
+                
+          </li>
+           <li class="nav-item mx-2 text-center">
+            <a href=""><i class="fa fa-bell" aria-hidden="true"></i>
+              <div>Notifications</div></a>      
+          </li>
+          <li class="nav-item mx-2 text-center">
+             <a href=""><i class="fa fa-search" aria-hidden="true"></i>
+           <div>Search</div></a>      
+          </li>
+
+
+
+        </ul>
+  </nav>
+</div>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar1").style.bottom = "0";
+  } else {
+    document.getElementById("navbar1").style.bottom = "-100%";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+<!-------footer for mob view end------------>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

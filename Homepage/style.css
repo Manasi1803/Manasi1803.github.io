@@ -163,12 +163,6 @@ a {
 }
 /* card header bg remove */
 
-.left,.right{
-    display: block;
-  }
-  .mfooter{
-    display:none;
-}
 .schedule::-webkit-scrollbar {
     width: 0.3em;
 }
@@ -254,6 +248,21 @@ button:hover {
 
 /* Modal end */
 
+.left,.right{
+    display: block;
+  }
+  .mfooter{
+    display:none;
+}
+.header1{
+    display: block;
+}
+.header2{
+    display: none;
+}
+.sidenav{
+    display: none;
+}
 /*--------------------media query for mob view--------------------*/
 @media (max-width: 768px) {
   .left,.right{
@@ -262,7 +271,12 @@ button:hover {
   .c1{
     display: none;
   }
-
+.header1{
+    display: none;
+}
+.header2{
+    display: block;
+}
 .mfooter{
     display:block;
 }
@@ -283,16 +297,48 @@ button:hover {
     border: 1px solid white;
     font-size: 12px;
 }
-.n1 .nav-item a{
-    border-bottom: 1px solid white!important;
-    padding:10px; 
-    display: flex;
-}
-.n1 .nav-item a:hover{
-    background: blue!important;
-}
-.n1 i{
-   margin-right: 10px;
-    }
+ .sidenav {
+    display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1032;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+  color: #fff;
+  font-size: 18px;
 
+}
+
+.menu a {
+ padding: 10px 0px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  
+}
+.menu i{
+    font-size: 16px;
+}
+
+.sidenav .closebtn { 
+  font-size: 36px;
+  color: white;
+ 
+}
+.md-sec{
+  height: auto!important;
+  overflow: hidden;
+}
+
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
