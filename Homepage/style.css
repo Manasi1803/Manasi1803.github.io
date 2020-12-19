@@ -93,11 +93,12 @@ a {
 
 /*-----------------------navbar end------------------------------------------->*/
 /*left  cards*/
-.card{
+.card {
     margin: 10px;
     background:#4C5352!important;
     color: white;
 }
+
 .dv{
     display: flex;
     flex-direction: row;
@@ -126,9 +127,6 @@ a {
 .speak-loud:hover{
     background-color: #EBEBEB;
 }
-a {
-    color: white !important;
-}
 /* rounded card */
 .card{
     border-radius: 10px;
@@ -137,6 +135,7 @@ a {
 
 .sharebtm{
     font-weight: bold;
+    color: white !important;
 }
 .sharebtm:hover{
     text-decoration: none;
