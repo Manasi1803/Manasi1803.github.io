@@ -299,23 +299,25 @@
 <!-- Modal for sign up start -->
 <div id="SignupModal" class="modal fade" role="dialog">
   <div class="modal-dialog" >
+    <div class="modal-content">
+   
             <form style="border:1px solid #ccc">
   <div class="container"  style=" background:#4C5352!important;">
     <label for="email" style="color: white"><b>Enter Email or Mobile number</b></label>
-    <input class="email" type="text" placeholder="Enter Email or Mobile number" name="email" required>
+    <input type="text" class="email" placeholder="Enter Email or Mobile number" >
 
     <label for="psw" style="color: white"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-   <h4 > <p style="display: inline;">I am a </p>
-    <select name="torst" id="torst">
-  <option value="student">Student</option>
+   <h5> <p style="display: inline; color: white">I am a </p>
+    <select >
+  <option value="student"><h5>Student</h5></option>
   <option value="teacher">Faculty</option>
  
-</select><br></h4>
+</select><br></h5>
     
     
-    <p style="color: white" class="policy">By clicking continue, you agree to our <a href="#" style="color:white; text-decoration: underline;">User Agreement</a>,<a href="#" style="color:white; text-decoration: underline;"> Privacy Policy</a> and <a href="#" style="color:white;text-decoration: underline;">Cookie Policy</a>.</p>
+    <p style="color: white" class="policy">By clicking continue, you agree to our <a href="#" style="color:white;">User Agreement</a>,<a href="#" style="color:white;"> Privacy Policy</a> and <a href="#" style="color:white;">Cookie Policy</a>.</p>
 
 <button type="button" class="btn btn-secondary btn-sm btn-block" >Continue</button><br>
   <div class="unique">
@@ -324,16 +326,20 @@
 
     <div class="google">
       <button type="button" class="btn btn-secondary btn-sm btn-block">Join With Google</button><br>
-      <p>Already registered?<a href="#" style="color:white; text-decoration: underline;">&nbsp;Sign in</a>
+      <p>Already registered?<a href="#" style="color:white; ">&nbsp;Sign in</a></p>
     </div>
   </div>
 </form>
 </div>
 </div>
+</div>
+
+
 <!-- modal for sign up end -->
 <!-- modal for login start -->
 <div id="LoginModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
+    <div class="modal-content">
 <form style="border:1px solid #ccc">
   <div class="container " style="background:#4C5352!important;">
 
@@ -342,13 +348,14 @@
 
     <label for="psw" style="color: white;"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
-    <h6><a href="#" style="color:white;">&nbsp;Forgot password?</a></h6>
+    <h6 ><a href="#" style="color:white;">&nbsp;Forgot password?</a></h6>
 
     <div class="signin">
       <button type="button" class="btn btn-secondary btn-block">Sign In</button>
-      <p style="color: white">New?<a href="#" style="color:white">&nbsp;Sign up</a>
+      <p style="color: white">New?<a href="#" style="color:white">&nbsp;Sign up</a></p>
     </div>
 
+</div>
 </div>
 </div>
 <!-- modal for login end -->
