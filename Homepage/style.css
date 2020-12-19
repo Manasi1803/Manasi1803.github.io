@@ -192,6 +192,10 @@ input[type=password] {
   background: #f1f1f1;
 
 }
+.docs > input {
+    background: lightgrey;
+ 
+}
 
 
 
