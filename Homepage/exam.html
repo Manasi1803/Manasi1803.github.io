@@ -21,7 +21,7 @@
 </head>
 <body>
   <div class="header header1" style="margin-bottom: 4.8rem; ">
-    <nav class="navbar navbar-expand-lg  fixed-top n1" style="background-color: #111;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top n1" style="background-color: #111;">
       <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
@@ -76,13 +76,25 @@
             <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
               <div>Search</div></a>      
           </li>
+          <li class="nav-item mr-4 ">
+            <a class="" href="#SignupModal" data-toggle="modal">
+              <div><i class="fas fa-user-plus"aria-hidden="true"></i></div>
+              <div>Sign up</div>
+               </a>
+          </li>
+          
+          <li class="nav-item mr-4 ">
+            <a class="" href="#LoginModal" data-toggle="modal">
+              <div><i class="fas fa-sign-in-alt"aria-hidden="true"></i></div>
+              <div>Sign in</div> </a>
+          </li>
 
         </ul>
 
       </div>
 
     </nav>
-  </div>
+  </div><br><br><br>
 
 
 
@@ -90,20 +102,26 @@
   <!----------------------mob header---------------------------------->
   <div class="header header2" style="margin-bottom: 4.8rem;">
     <nav class="navbar navbar-dark bg-dark justify-content-between fixed-top">
-  <div style="width: 60%;"class="d-flex">
-    <!--<div class="d-flex justify-content-center align-items-center"onclick="openNav()">
-      <img src="images/boy.png"style="width:40px;height:auto;background:#fff;"class="rounded-circle">
-    </div>-->
-     <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
+  <div style=";"class="d-flex">
+     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
     </div>
-  <div>
-    <ul><li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
-              </a>      
-          </li></ul>
-  </div>
+  
+        <div class=" input-group form-container"style="width:40%">
+          <span class="input-group-btn sr1">
+                <button class="btn  btn-search pr-1 pl-2" type="submit"><i
+                    class="fas fa-search mr-1"></i></button>
+          </span>
+              <input class="form-control in" type="search" placeholder="Search"
+                aria-label="Search" autocomplete="off">
+            </div>
+      
+        <div>
+            <a href=""><div><i class="fas fa-comment-dots"></i></div>
+              </a> 
+              </div>     
+          
 </nav>
 </div>
 <div id="mySidenav" class="sidenav ">
@@ -146,7 +164,7 @@ function closeNav() {
   <!-------------------------------- table start ------------------------------->
   <section>
     <div>
-      <h3 class=" pb-3 pl-3"style="color: white;"><b>Examination</b></h3>
+      <h3 style="color: white; text-align: center;">Examination</h3><hr style="color: white">
     </div>
     <div class="tables"style="color: #fff!important;">
       <div class="container-fluid">
@@ -239,8 +257,8 @@ function closeNav() {
                       <div class="d-flex justify-content-between">
                           <span>My Result</span>
                           <div class="text-center">   
-                          <span> <img src="images/boy.png" class="rounded-circle"style="width: 30px;height: auto;background: #fff;"> </span>
-                          <div class="px-2 py-1 "style="font-size: 14px!important;"> Priyanka Pradhan </div>
+                          <!--<span> <img src="images/boy.png" class="rounded-circle"style="width: 30px;height: auto;background: #fff;"> </span>-->
+                          <div class="px-2 py-1 "style=""> Priyanka Pradhan </div>
                         </div>
                       </div>
                    </th>
@@ -278,11 +296,9 @@ function closeNav() {
               </thead>
             </table>
           </div>
-           <div class="table-responsive ">
+           <div class="table-responsive "style="margin-bottom: 7vh;">
             <table class="table table-striped table-bordered table-dark"style="color: #fff;">
                 <thead class="thead-light">
-                  
-                  
                   <tr>
                     <th colspan="6">
                       <div class="text-center">DELHI PUBLIC SCHOOL, LUCKNOW</div>
@@ -340,7 +356,6 @@ function closeNav() {
                   </tr>
                   <tr>
                     <th scope="row" colspan="2">Total</th>
-                    
                     <td>500</td>
                     <td>150</td>
                     <td>400</td>
@@ -392,7 +407,19 @@ function closeNav() {
         </ul>
   </nav>
 </div>
-
+<!--<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar1").style.bottom = "0";
+  } else {
+    document.getElementById("navbar1").style.bottom = "-100%";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>-->
+<!-------footer for mob view end------------>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
