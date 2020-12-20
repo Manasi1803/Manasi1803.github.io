@@ -4,7 +4,7 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
-  <title>Research</title>
+  <title>Study Material</title>
   <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
@@ -18,7 +18,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <style>
-    * {
+  	* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -61,69 +61,13 @@ body {
 .nav-item{
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    margin:5px;
 }
-
-
-/*-----------------------navbar end------------------------------------------->*/
-
-.row{
-  margin: 10px;
-}
-
-
-.list > li {
-  margin: 10px;
-}
-.sub > input{
-  height: 6vh;
-   width: 300px;
-   
-
-}
-select {
-    /* for Firefox */
-    -moz-appearance: none;
-    /* for Safari, Chrome, Opera */
-    -webkit-appearance: none;
-}
-
-select::-ms-expand {
-    display: none;
-}
-.status > li {
-  margin: 10px;
-}
-.card-body{
-   background: #111!important;
-
-}
-.card-text{
-  color: white !important;
-}
-/*@media (max-width: 320px) {
-  .res{
-    margin-top: 10px;
-  }
-  .sta{
-    margin-top: 10px;
-  }
-  .mvs > li{
-    font-size: smaller;
-
-  }
-
-
-
-}
-
-
-*/
-    
   </style>
+
 </head>
-<body>
-  <div class="header header1" style="margin-bottom: 4.8rem; ">
+<body> 
+	<div class="header header1" style="margin-bottom: 4.8rem; ">
     <nav class="navbar navbar-expand-lg  fixed-top n1" style="background-color: #111;">
       <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
@@ -187,12 +131,6 @@ select::-ms-expand {
   </div><br>
   <br>
 
-
-
-
-
-
-  <!--header end---------->
   <!----------------------mob header---------------------------------->
   <div class="header header2" style="margin-bottom: 4.8rem;">
     <nav class="navbar navbar-dark bg-dark justify-content-between fixed-top">
@@ -249,119 +187,105 @@ function closeNav() {
 }
 </script>
   <!----------------------mob header end---------------------------------->
-<div class="container-fluid">
-  <h3 style="color: white; text-align: center;">Research</h3><hr style="color: white">
-  <div class="row">
-  <div class="col-sm-4">
-    <div class="card">
-      <h4 class="card-header" style="display: flex;flex-direction: row;justify-content: space-between;">Hello , <br> Manasi<div class="col-lg-2 col-sm-2 col-md-2 col-3 pr-0" style="margin-right: 5px;margin-bottom: 2px;">
-                <i class="fas fa-user-circle fa-2x pl-0 " ></i>
-              </div></h4>
+      <h3 style="color: white; text-align: center;">Study Material</h3><hr style="color: white">
+	<div class="main py-5">
 
-      <div class="card-body" style="display: flex;flex-direction: row;justify-content: space-around;">
-        <ul class="card-text list" style="list-style: none; float: left; margin-bottom: 0 !important">
-          <li><input type="text" name="" placeholder="Father's Name" disabled="true" ></li>
-          <li><input type="text" name="" placeholder="Mother's Name" disabled="true"></li>
-          <li><input type="text" name="" placeholder="Current Class" disabled="true"></li>
-          <li><input type="text" name="" placeholder="Roll No." disabled="true"></li>
-          <li><input type="text" name="" placeholder="Registration No." disabled="true"></li>
-          <li><input type="text" name="" placeholder="Contact" disabled="true"></li>
-         
-        </ul>
-        <ul class="card-text list" style="list-style: none; margin-bottom: 0 !important">
-          <li><input type="text" name=""></li>
-          <li><input type="text" name=""></li>
-          <li><input type="text" name=""></li>
-          <li><input type="text" name=""></li>
-          <li><input type="text" name=""></li>
-          <li><input type="text" name=""></li>
-          
-        </ul>
-
-      </div>
-      <h5 class="card-header" style="height: 40px;">History</h5>
-      <div class="card-body" style="overflow-y: scroll; height: 12vh;">
-        <ul class="card-text" style="font-size: 18px;margin-left: 15px">
-          <li>Review Submission on 22/03/2022</li>
-           <li>Review Submission on 15/09/2022</li>
-           <li>Review Submission on 30/10/2022</li>
-           <li>Review Submission on 22/03/2022</li>
-           <li>Review Submission on 15/09/2022</li>
-           <li>Review Submission on 30/10/2022</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-  <div class="col-sm-4 res">
-    <div class="card">
-      <h5 class="card-header">Submit your Research for Publication</h5>
-      <div class="card-body">
-      <ul class="card-text list " style="list-style: none;">
-          <li class="sub"><input type="text" name="" placeholder="Title of Research"></li >
-          <li class="sub"><input type="text" name="" placeholder="Category of Research"></li>
-          <li class="sub"><input type="text" name="" placeholder="Data Type for Research"></li>
-          <li class="sub"><input type="text" name="" placeholder="Time Duration of Research"></li>
-          <li class="sub"><input type="text" name="" placeholder="Associates for Research"></li>
-          <li class="sub"><input type="file" name="" placeholder="Add a File"></li>
-          <button type="button" class="btn btn-outline-success btn-lg btn-block">Submit for Review</button>
-          
-        </div>  
-        </ul>
-      </div>
-    </div>
- <div class="col-sm-4 sta" >
-    <div class="card" >
-      <h4 class="card-header">Status</h4>
-      <div class="card-body " style="display: flex;flex-direction: row;justify-content: space-between;">
-        <ul class="status mvs card-text" style="float: left; font-size: 20px">
-          <li>Special title treatment</li>
-          <li>Special title treatment</li>
-          <li>Special title treatment</li>
-          <li>Special title treatment</li>
-        </ul>
-        <ul class="status mvs card-text" style="list-style: none;font-size: 20px">
-          <li>30/10/2022</li>
-          <li>30/10/2022</li>
-          <li>30/10/2022</li>
-          <li>30/10/2022</li>
-        </ul>
-        <ul class="status mvs" style="float: right; list-style: none;font-size: 20px">
-          <li><select style="border:none;">
-                <option value="#">Rejected</option>
-                <option value="#">Approved</option>
-                <option value="#">Pending</option>
-                <option value="#">Declined</option>
-              </select></li>
-          <li><select style="border:none;">
-            <option value="#">Pending</option>
-                <option value="#">Rejected</option>
-                <option value="#">Approved</option>
-                
-                <option value="#">Declined</option>
-              </select></li>
-          <li><select style="border:none;">
-            <option value="#">Declined</option>
-                <option value="#">Rejected</option>
-                <option value="#">Approved</option>
-                <option value="#">Pending</option>
-                
-              </select></li>
-          <li><select style="border:none;">
-            <option value="#">Approved</option>
-                <option value="#">Rejected</option>
-                
-                <option value="#">Pending</option>
-                <option value="#">Declined</option>
-              </select></li>
-        </ul>
-
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!-------footer for mob view start------------>
+		<div class="row">
+			
+			<div class="col-sm-12 col-md-12 col-lg-6">
+				
+				<table class="table table-dark table-striped  table-bordered text-center my-4 mx-3">
+					<thead class="thead-dark">
+						<th colspan="6">Catlogs</th>
+						
+						<tr>
+							<th>S.N.</th>
+							<th>Subject</th>
+							<th>Title</th>
+							<th>Type</th>
+							<th>Faculty</th>
+                            <th>Uploaded on</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>English</td>
+							<td>Core Study on Aidi</td>
+							<td>Lecture Notes</td>
+							<td>Ds.Monse</td>
+							<td>12-12-20 at 12:30 P.M.</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>English</td>
+							<td>Core Study on Aidi</td>
+							<td>Lecture Notes</td>
+							<td>Ds.Monse</td>
+							<td>12-12-20 at 12:30 P.M.</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>English</td>
+							<td>Core Study on Aidi</td>
+							<td>Lecture Notes</td>
+							<td>Ds.Monse</td>
+							<td>12-12-20 at 12:30 P.M.</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>English</td>
+							<td>Core Study on Aidi</td>
+							<td>Lecture Notes</td>
+							<td>Ds.Monse</td>
+							<td>12-12-20 at 12:30 P.M.</td>
+						</tr>
+												<tr>
+							<td>1</td>
+							<td>English</td>
+							<td>Core Study on Aidi</td>
+							<td>Lecture Notes</td>
+							<td>Ds.Monse</td>
+							<td>12-12-20 at 12:30 P.M.</td>
+						</tr>
+										</tbody>
+				 </table>
+		     	</div>
+				<div class="col-sm-12 col-md-12 col-lg-6">
+				 
+	             <div class="card bg-dark text-light my-4 mx-3" style="height:50vh; overflow-y: scroll;" >
+	             	<div class="card-body">
+	             		<h2 class="card-title card-dark text-center">Headlines of Newspaper</h2>
+                     <ul><li>Tina Doby sets record to become youngest IAS officer. She was only 22 years when she joined IAS.</li></ul>
+                     <ul><li> 
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li></ul>
+                     <ul><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li></ul>
+                     <ul><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li></ul>
+                     <ul><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li></ul>
+                     <ul><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li></ul>
+                     <ul><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li></ul>
+                     <ul><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li></ul>
+                     <a href="#" class="card-link d-block text-right" style="font-size:22px">Read more</a>
+	                </div>
+	             </div>	
+	            </div>
+	     </div>	
+	</div>
+  <!-------footer for mob view start------------>
 <div class="mfooter">
   <nav class="navbar navbar-light  bg-dark"id="navbar1"style="color: white!important;">
     <ul class=" d-flex justify-content-between "style="width: 100%;">
@@ -398,8 +322,10 @@ function closeNav() {
 </div>
 
 
+<!-------footer for mob view end------------>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
