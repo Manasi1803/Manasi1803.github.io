@@ -63,24 +63,6 @@ body {
     flex-direction: column;
     margin: 5px;
 }
-.btn.btn-search {
-    background: #fff!important;
-    border-radius: 0;
-    color: white;
-
-}
-.sr1 .fa-search{
-  color: black;
-}
-.fa-comment-dots{
-  color: white;
-  font-size: 20px;
-}
-.in{
-  border:none!important;
-  border-radius: 0;
-}
-
 
 
 /*-----------------------navbar end------------------------------------------->*/
@@ -119,29 +101,17 @@ select::-ms-expand {
 .card-text{
   color: white !important;
 }
-/*@media (max-width: 320px) {
-  .res{
-    margin-top: 10px;
-  }
-  .sta{
-    margin-top: 10px;
-  }
-  .mvs > li{
-    font-size: smaller;
-
-  }
-
-
-
+select{
+  border: none;
+  background-color: #111;
+  color: white;
 }
 
-
-*/
     
   </style>
 </head>
 <body>
-  <div class="header header1" style="margin-bottom:4rem !important">
+  <div class="header header1" style="margin-bottom: 4.8rem; ">
     <nav class="navbar navbar-expand-lg  fixed-top n1" style="background-color: #111;">
       <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
@@ -203,7 +173,7 @@ select::-ms-expand {
 
     </nav>
   </div><br>
-  
+  <br>
 
 
 
@@ -214,26 +184,20 @@ select::-ms-expand {
   <!----------------------mob header---------------------------------->
   <div class="header header2" style="margin-bottom: 4.8rem;">
     <nav class="navbar navbar-dark bg-dark justify-content-between fixed-top">
-  <div style=";"class="d-flex">
-     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
+  <div style="width: 60%;"class="d-flex">
+    <!--<div class="d-flex justify-content-center align-items-center"onclick="openNav()">
+      <img src="images/boy.png"style="width:40px;height:auto;background:#fff;"class="rounded-circle">
+    </div>-->
+     <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
     </div>
-  
-        <div class=" input-group form-container"style="width:40%">
-          <span class="input-group-btn sr1">
-                <button class="btn  btn-search pr-1 pl-2" type="submit"><i
-                    class="fas fa-search mr-1"></i></button>
-          </span>
-              <input class="form-control in" type="search" placeholder="Search"
-                aria-label="Search" autocomplete="off">
-            </div>
-      
-        <div>
-            <a href=""><div><i class="fas fa-comment-dots"></i></div>
-              </a> 
-              </div>     
-          
+  <div>
+    <ul><li class="nav-item mr-4">
+            <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
+              </a>      
+          </li></ul>
+  </div>
 </nav>
 </div>
 <div id="mySidenav" class="sidenav ">
@@ -274,37 +238,42 @@ function closeNav() {
 </script>
   <!----------------------mob header end---------------------------------->
 <div class="container-fluid">
-  <h3 style="color: white; margin-left: 25px; ">Research</h3>
+  <h3 style="color: white; margin-left: 25px">Research</h3>
   <div class="row">
-  <div class="col-sm-4">
-    <div class="card">
+  <div class="col mb-3 ">
+    <div class="card ">
       <h4 class="card-header" style="display: flex;flex-direction: row;justify-content: space-between;">Hello , <br> Manasi<div class="col-lg-2 col-sm-2 col-md-2 col-3 pr-0" style="margin-right: 5px;margin-bottom: 2px;">
                 <i class="fas fa-user-circle fa-2x pl-0 " ></i>
               </div></h4>
 
-      <div class="card-body" style="display: flex;flex-direction: row;justify-content: space-around;">
-        <ul class="card-text list" style="list-style: none; float: left; margin-bottom: 0 !important">
-          <li><input type="text" name="" placeholder="Father's Name" disabled="true" style="border: none; background-color: #111; "></li>
-          <li><input type="text" name="" placeholder="Mother's Name" disabled="true" style="border: none; background-color: #111;"></li>
-          <li><input type="text" name="" placeholder="Current Class" disabled="true" style="border: none; background-color: #111;"></li>
-          <li><input type="text" name="" placeholder="Roll No." disabled="true" style="border: none; background-color: #111;"></li>
-          <li><input type="text" name="" placeholder="Registration No." disabled="true" style="border: none; background-color: #111;"></li>
-          <li><input type="text" name="" placeholder="Contact" disabled="true" style="border: none; background-color: #111;"></li>
-         
-        </ul>
-        <ul class="card-text list" style="list-style: none; margin-bottom: 0 !important">
-          <li><input type="text" name=""></li>
-          <li><input type="text" name=""></li>
-          <li><input type="text" name=""></li>
-          <li><input type="text" name=""></li>
-          <li><input type="text" name=""></li>
-          <li><input type="text" name=""></li>
-          
-        </ul>
-
+      <div class="card-body ">
+        <div class="row d-flex justify-content-between">
+          <label class="text-white" for="">Father's Name</label>
+          <input  type="text">
+        </div>
+        <div class="row d-flex justify-content-between">
+          <label class="text-white" for="">Mother's Name</label>
+          <input  type="text">
+        </div>
+        <div class="row d-flex justify-content-between">
+          <label class="text-white" for="">Current Class</label>
+          <input  type="text">
+        </div>
+        <div class="row d-flex justify-content-between">
+          <label class="text-white" for="">Roll No.</label>
+          <input  type="text">
+        </div>
+        <div class="row d-flex justify-content-between">
+          <label class="text-white" for="">Registration No.</label>
+          <input  type="text">
+        </div>
+        <div class="row d-flex justify-content-between">
+          <label class="text-white" for="">Contact <span style="visibility: hidden;">dont rm dis !</span></label>
+          <input  type="text">
+        </div>
       </div>
-      <h5 class="card-header" style="height: 40px;">History</h5>
-      <div class="card-body" style="overflow-y: scroll; height: 12vh;">
+      <h5 class="card-header">History</h5>
+      <div class="card-body " style="overflow-y: scroll; height: 12vh;">
         <ul class="card-text" style="font-size: 18px;margin-left: 15px">
           <li>Review Submission on 22/03/2022</li>
            <li>Review Submission on 15/09/2022</li>
@@ -317,69 +286,100 @@ function closeNav() {
 
     </div>
   </div>
-  <div class="col-sm-4 res">
+  <div class="col mb-3 res">
     <div class="card">
       <h5 class="card-header">Submit your Research for Publication</h5>
       <div class="card-body">
-      <ul class="card-text list " style="list-style: none;">
-          <li class="sub"><input type="text" name="" placeholder="Title of Research"></li >
-          <li class="sub"><input type="text" name="" placeholder="Category of Research"></li>
-          <li class="sub"><input type="text" name="" placeholder="Data Type for Research"></li>
-          <li class="sub"><input type="text" name="" placeholder="Time Duration of Research"></li>
-          <li class="sub"><input type="text" name="" placeholder="Associates for Research"></li>
-          <li class="sub"><input type="file" name="" placeholder="Add a File"></li>
-          <button type="button" class="btn btn-outline-warning btn-lg btn-block">Submit for Review</button>
-          
+        <div class="row sub"><input type="text" name="" placeholder="Title of Research"></div>
+        <div class="row sub"><input type="text" name="" placeholder="Category of Research"></div>
+        <div class="row sub"><input type="text" name="" placeholder="Data Type for Research"></div>
+        <div class="row sub"><input type="text" name="" placeholder="Time Duration of Research"></div>
+        <div class="row sub"><input class="text-light" type="file" name="" placeholder="Add a File"></div>
+        <button type="button" class="btn btn-outline-warning btn-lg btn-block">Submit for Review</button>
         </div>  
-        </ul>
+        
       </div>
     </div>
- <div class="col-sm-4 sta" >
+ <div class="col sta" >
     <div class="card" >
       <h4 class="card-header">Status</h4>
-      <div class="card-body " style="display: flex;flex-direction: row;justify-content: space-between;">
-        <ul class="status mvs card-text" style="float: left; font-size: 20px">
-          <li>Special title treatment</li>
-          <li>Special title treatment</li>
-          <li>Special title treatment</li>
-          <li>Special title treatment</li>
-        </ul>
-        <ul class="status mvs card-text" style="list-style: none;font-size: 20px">
-          <li>30/10/2022</li>
-          <li>30/10/2022</li>
-          <li>30/10/2022</li>
-          <li>30/10/2022</li>
-        </ul>
-        <ul class="status mvs" style="float: right; list-style: none;font-size: 20px">
-          <li><select style="border:none; background-color: #111; color: white">
-                <option value="#">Rejected</option>
-                <option value="#">Approved</option>
-                <option value="#">Pending</option>
-                <option value="#">Declined</option>
-              </select></li>
-          <li><select style="border:none;background-color: #111; color: white">
-            <option value="#">Pending</option>
-                <option value="#">Rejected</option>
-                <option value="#">Approved</option>
-                
-                <option value="#">Declined</option>
-              </select></li>
-          <li><select style="border:none;background-color: #111; color: white">
-            <option value="#">Declined</option>
-                <option value="#">Rejected</option>
-                <option value="#">Approved</option>
-                <option value="#">Pending</option>
-                
-              </select></li>
-          <li><select style="border:none;background-color: #111; color: white">
+      <div class="card-body mb-0 pb-3 ">
+        <div class="row d-flex justify-content-between text-center">
+         <label for="" class="text-white"> Special title treatment</label>
+         <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
+         <select>
+            <option value="#">Rejected</option>
             <option value="#">Approved</option>
-                <option value="#">Rejected</option>
-                
-                <option value="#">Pending</option>
-                <option value="#">Declined</option>
-              </select></li>
-        </ul>
-
+            <option value="#">Pending</option>
+            <option value="#">Declined</option>
+          </select>
+        </div>
+        <div class="row d-flex justify-content-between text-center">
+          <label for="" class="text-white"> Special title treatment</label>
+          <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
+          <select>
+            <option value="#">Approved</option>
+             <option value="#">Rejected</option>
+            
+             <option value="#">Pending</option>
+             <option value="#">Declined</option>
+           </select>
+         </div>
+         <div class="row d-flex justify-content-between text-center">
+          <label for="" class="text-white"> Special title treatment</label>
+          <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
+          <select>
+            <option value="#">Declined</option>
+             <option value="#">Rejected</option>
+             <option value="#">Approved</option>
+             <option value="#">Pending</option>
+             
+           </select>
+         </div>
+         <div class="row d-flex justify-content-between text-center">
+          <label for="" class="text-white"> Special title treatment</label>
+          <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
+          <select>
+            <option value="#">Pending</option>
+             <option value="#">Rejected</option>
+             <option value="#">Approved</option>
+             
+             <option value="#">Declined</option>
+           </select>
+         </div>
+         <div class="row d-flex justify-content-between text-center">
+          <label for="" class="text-white"> Special title treatment</label>
+          <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
+          <select>
+             <option value="#">Rejected</option>
+             <option value="#">Approved</option>
+             <option value="#">Pending</option>
+             <option value="#">Declined</option>
+           </select>
+         </div>
+         <div class="row d-flex justify-content-between text-center">
+          <label for="" class="text-white"> Special title treatment</label>
+          <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
+          <select>
+             <option value="#">Rejected</option>
+             
+             <option value="#">Approved</option>
+             <option value="#">Pending</option>
+             <option value="#">Declined</option>
+           </select>
+         </div>
+         <div class="row d-flex justify-content-between text-center">
+          <label for="" class="text-white"> Special title treatment</label>
+          <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
+          <select>
+            <option value="#">Declined</option>
+             <option value="#">Rejected</option>
+             <option value="#">Approved</option>
+             <option value="#">Pending</option>
+             
+           </select>
+         </div>
+         
       </div>
     </div>
   </div>
