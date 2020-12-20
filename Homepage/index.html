@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,10 +37,29 @@
             <div>Home</div></a> 
            
           </li>
-          <li class="nav-item mr-4">
+          <!-- <li class="nav-item mr-4 dropdown">
             <a href=""><div><i class="fa fa-book" aria-hidden="true"></i></div>
-      <div>Academics</div></a>      
-          </li>
+      <div class=" dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true">Academics</div></a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>      
+          </li> -->
+          <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-book" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Academics
+        </a>
+        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" style="color: black !important;">Attendence</a>
+          <a class="dropdown-item" href="#" style="color: black !important;">Time-Table</a>
+          <a class="dropdown-item" href="#" style="color: black !important;">Examination</a>
+          <a class="dropdown-item" href="#" style="color: black !important;">Assignment</a>
+          <a class="dropdown-item" href="#" style="color: black !important;">Study Material</a>
+          <a class="dropdown-item" href="#" style="color: black !important;">Research</a>
+        </div>
+      </li>
           <li class="nav-item mr-4">
               <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></div>
               <div>Campus</div></a>      
@@ -200,8 +218,10 @@ function closeNav() {
         <div class="card shadow c1">
           <div class="card-body pb-1 pt-3">
             <div class="shrep pb-3">
-              <button class=" btn btn-block border speak-loud text-left" ><span><i class="far fa-edit fa-lg" style="color: #5E5E5E;"></i></span><span class="pl-2" style="color: #7C7C7C;">Speak Out Louder</span> </button>
-            </div>
+              <div class="speak">
+                <input  type="text" placeholder="&#xf044; Speak Out Loud" style="width: 100%; border-radius: 25px; padding: 10px;   font-family:Arial, FontAwesome" >
+
+            </div><br>
             <div class="sharepimg  d-flex justify-content-between">
               <a class="sharebtm">Photos</a>
               <a class="sharebtm">Videos</a>
@@ -229,32 +249,29 @@ function closeNav() {
             </div>
             <div class="card-text " >
               <div class="post-text">
-                <p class="preview">
+                <p class="comment more" style="width: 100%; background-color: #111;">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                  Proin et est gravida, rutrum massa eu, lacinia tortor. 
                  Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,...
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin et est gravida, rutrum massa eu, lacinia tortor. 
+                    Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+                     Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
                 </p>
-                <p  class="collapse" id="post1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Proin et est gravida, rutrum massa eu, lacinia tortor. 
-                  Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-                   Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,...
-                  
-                 </p>
-                 <a class=" text-left  my-1 mb-2 rmb clr"  data-toggle="collapse" href="#post1" role="button" aria-expanded="false" aria-controls="post1" style="color: white; text-decoration: none;" >Show More</a>  
+                
+                   
               </div>
             </div>
             <div class=" text-center border-bottom border-top  pb-3">
-              <img class="img-fluid  mt-lg-3" src="work-3.jpg" alt="">
+              <img class="img-fluid  mt-lg-3" src="work-3.jpg" alt="" width="400px" height="100px">
             </div>
-            <div class="post-footer mt-2 d-flex justify-content-between">
-              <a class="sharebtm">Acknowledge</a>
-              <a class="sharebtm">Express</a>
-              <a class="sharebtm">Support</a>
-              <a class="sharebtm">Send</a> 
+            <!-- <div class="post-footer mt-2 d-flex justify-content-between"> -->
+              <a><i class="far fa-heart"></i></a>
+              <a><i class="far fa-comment-dots"></i></a>
+              <a><i class="far fa-handshake"></i></a>
+              <a><i class="far fa-share-square"></i></a> 
 
-            </div>
+           <!--  </div> -->
           </div>
         </div>
         <div class="card shadow">
@@ -274,31 +291,25 @@ function closeNav() {
             </div>
             <div class="card-text " >
               <div class="post-text">
-                <p class="preview">
+                <p class="comment more" style="width: 100%; background-color: #111;">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,...
-                </p>
-                <div class="moretext" >
-                  <p class="collapse" id="post2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin et est gravida, rutrum massa eu, lacinia tortor. 
                     Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
                      Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-                    
-                   </p>
-                   <a class=" text-left  my-1 mb-2 rmb clr"  data-toggle="collapse" href="#post2" role="button" aria-expanded="false" aria-controls="post2" style="color: white; text-decoration: none;" >Show More</a>                  </div>
+                </p>
+                
               </div>
             </div>
             <div class=" text-center border-bottom border-top  pb-3">
-              <img class="img-fluid  mt-lg-3" src="work-3.jpg" alt="">
+              <img class="img-fluid  mt-lg-3" src="work-3.jpg" alt="" width="400px" height="100px">
             </div>
-            <div class="post-footer mt-2 d-flex justify-content-between">
-              <a class="sharebtm">Acknowledge</a>
-              <a class="sharebtm">Express</a>
-              <a class="sharebtm">Support</a>
-              <a class="sharebtm">Send</a> 
+         
+              <a><i class="far fa-heart"></i></a>
+              <a><i class="far fa-comment-dots"></i></a>
+              <a><i class="far fa-handshake"></i></a>
+              <a><i class="far fa-share-square"></i></a> 
 
-            </div>
           </div>
         </div>
         <!-- second card end -->
@@ -320,31 +331,24 @@ function closeNav() {
             </div>
             <div class="card-text " >
               <div class="post-text">
-                <p class="preview">
+                <p class="comment more" style="width: 100%; background-color: #111;">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,...
-                </p>
-                <div class="moretext" >
-                  <p class="collapse" id="post2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin et est gravida, rutrum massa eu, lacinia tortor. 
                     Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
                      Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-                    
-                   </p>
-                   <a class=" text-left  my-1 mb-2 rmb clr"  data-toggle="collapse" href="#post2" role="button" aria-expanded="false" aria-controls="post2" style="color: white; text-decoration: none;" >Show More</a>                  </div>
+                </p>
+                
               </div>
             </div>
             <div class=" text-center border-bottom border-top  pb-3">
-              <img class="img-fluid  mt-lg-3" src="work-3.jpg" alt="">
+              <img class="img-fluid  mt-lg-3" src="work-3.jpg" alt="" width="400px" height="100px">
             </div>
-            <div class="post-footer mt-2 d-flex justify-content-between">
-              <a class="sharebtm">Acknowledge</a>
-              <a class="sharebtm">Express</a>
-              <a class="sharebtm">Support</a>
-              <a class="sharebtm">Send</a> 
+              <a><i class="far fa-heart"></i></a>
+              <a><i class="far fa-comment-dots"></i></a>
+              <a><i class="far fa-handshake"></i></a>
+              <a><i class="far fa-share-square"></i></a> 
 
-            </div>
           </div>
         </div>
         <!-- third card end -->
@@ -366,35 +370,29 @@ function closeNav() {
             </div>
             <div class="card-text " >
               <div class="post-text">
-                <p class="preview">
+                <p class="comment more" style="width: 100%; background-color: #111;">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,...
-                </p>
-                <div class="moretext" >
-                  <p class="collapse" id="post2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin et est gravida, rutrum massa eu, lacinia tortor. 
                     Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
                      Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-                    
-                   </p>
-                   <a class=" text-left  my-1 mb-2 rmb clr"  data-toggle="collapse" href="#post2" role="button" aria-expanded="false" aria-controls="post2" style="color: white; text-decoration: none;" >Show More</a>                  </div>
+                </p>
+                
               </div>
             </div>
             <div class=" text-center border-bottom border-top  pb-3">
-              <img class="img-fluid  mt-lg-3" src="work-3.jpg" alt="">
+              <img class="img-fluid  mt-lg-3" src="work-3.jpg" alt="" width="400px" height="100px">
             </div>
-            <div class="post-footer mt-2 d-flex justify-content-between">
-              <a class="sharebtm">Acknowledge</a>
-              <a class="sharebtm">Express</a>
-              <a class="sharebtm">Support</a>
-              <a class="sharebtm">Send</a> 
+            <a><i class="far fa-heart"></i></a>
+              <a><i class="far fa-comment-dots"></i></a>
+              <a><i class="far fa-handshake"></i></a>
+              <a><i class="far fa-share-square"></i></a> 
 
-            </div>
           </div>
         </div>
         <!-- fourth card end -->
       </div>
+    </div>
       <!-- middle sec end -->
       <!-- right side start -->
   <div class="col-3 pl-0 right">
