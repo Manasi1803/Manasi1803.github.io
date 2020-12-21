@@ -168,6 +168,19 @@ a {
     font-size: small;
     font-weight: bold;
 }*/
+.hashtag:hover{
+  background: #1DA1F2;
+  color: white!important;
+}
+.icons i{
+  color: white;
+}
+.btns button{
+  background: #111;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid #555;
+}
 .speak-loud:hover{
     background-color: #EBEBEB;
 }

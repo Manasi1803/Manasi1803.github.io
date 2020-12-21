@@ -52,10 +52,21 @@
           <a class="dropdown-item" href="projects.html" style="color: black !important;">Projects</a>
         </div>
       </li>
-          <li class="nav-item mr-4">
-              <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></div>
-              <div>Campus</div></a>      
-          </li>
+          <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Campus
+        </a>
+        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="" style="color: black !important;">Classroom</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Fee Details</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Raise A Request</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Recommendation</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Feedback</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Notice Board</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Holidays</a>
+        </div>
+      </li>
           <li class="nav-item mr-4">
             <a href=""><div><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
              <div>Internship</div></a>      
@@ -202,11 +213,12 @@ function closeNav() {
         <div class="card shadow c1">
           <div class="card-body pb-1 pt-3">
             <div class="shrep pb-3">
-              <div class="speak">
-                <input  type="text" placeholder="&#xf044; Speak Out Loud" style="width: 100%; border-radius: 25px; padding: 10px;   font-family:Arial, FontAwesome" >
-
+              <div class="speak"style="width: 100%; border-radius: 25px; padding: 10px;background: white;color: grey;cursor: pointer;"id="post">
+                <!--<input  type="text" placeholder="&#xf044; Speak Out Loud" style="width: 100%; border-radius: 25px; padding: 10px;   font-family:Arial, FontAwesome" >-->
+                 <span><i class="far fa-edit "></i> Speak Out Loud </span>
             
-            </div></div>
+              </div>
+          </div>
 
             <div class="sharepimg  d-flex justify-content-between">
               <div class="icons">
@@ -233,6 +245,72 @@ function closeNav() {
             </div>
           </div>
         </div>
+        <!--------modal start------>
+        <div class="modal fade" id="postModal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"style="background: #111!important;color: white;border: 1px solid #ccc;">
+        <div class="modal-header" >
+          <h4 class="modal-title">Create a post</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"style="color: white;">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+             <div>
+               <span class=""><img src="images/boy.png"style="width:50px;height:auto;background: white;"class="rounded-circle"></span><span  class="mx-3"style="font-size: 20px;">Priyanka</span>
+               <span class="mx-2"><select class="py-2 px-2"style="background: #111;color: white;border-radius: 50px;">
+                 <option>Anyone</option>
+                 <option>Connection only</option>
+                 <option>Group memmbers</option>
+               </select></span>
+             </div>
+             <div class="my-2">
+               <textarea class="form-control" id="textarea" rows="3"placeholder="What do you want to talk about"style="background: transparent;border: none;color: white;"></textarea>
+             </div>
+             <div class="my-2">
+               <button style="color: #1DA1F2;font-size: 18px;"class="hashtag btn">Add Hashtag</button><span style="color: grey;"class="mx-3">Help the right people see your post</span>
+             </div>
+             <div class="my-2 d-flex justify-content-between">
+               <div class="icons">
+                 <a href=""><i class="fas fa-plus mx-2"></i></a>
+                 <a href=""><i class="fas fa-image mx-2"></i></a>
+                 <a href=""><i class="fab fa-youtube mx-2"></i></a>
+                 <a href=""><i class="fas fa-file-alt mx-2"></i></a>
+                 
+               </div>
+               <div>
+                 <button class="btn btn-outline-primary px-4"style="border-radius: 50px;">Post</button>
+               </div>
+             </div>
+             </div>
+             <div class="modal-footer p-0">
+             <div style="background: #222;"class="btns">
+               <button class="btn m-2">celebrate an occasion</button>
+               <button class="btn m-2">Share that you are hiring</button>
+               <button class="btn m-2">Find an expert</button>
+               <button class="btn m-2">Create a poll</button>
+               <button class="btn m-2">Offer help</button>
+             </div>
+             </div>
+        
+      </div>
+    </div>
+  </div>
+  <script >
+    $(document).ready(function(){
+  $("#post").click(function() {
+  $("#postModal").modal('show');
+
+  $('.hashtag').click(function () {
+            var areaValue = $('#textarea').val();
+        $('#textarea').val(areaValue + '#');
+        });
+
+  
+ })  
+});
+  </script>
+        <!--------modal end------>
         <!-- second card -->
         <div class="card shadow cards">
           <div class="card-body py-2 mx-0">
@@ -252,7 +330,21 @@ function closeNav() {
               </div>
             </div>
           </div>
-            <div class="d-flex align-items-center px-2"><a href=""><i class="fas fa-ellipsis-h" style="margin: 5px"></i></a></div>
+            <div class="d-flex align-items-center px-2">
+              <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-ellipsis-h" style="margin: 5px"></i>
+              </a>
+              <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="" style="color: black !important;">Save</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Copy link to post</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Embed this post</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Unfollow</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Mute</a>
+                <a class="dropdown-item" href="" style="color: black !important;">I don't want to see this</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Report this post</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Who can see this post ?</a>
+              </div>
+            </div>
 
           </div>
             
@@ -297,7 +389,21 @@ function closeNav() {
               </div>
             </div>
           </div>
-            <div class="d-flex align-items-center px-2"><a href=""><i class="fas fa-ellipsis-h" style="margin: 5px"></i></a></div>
+            <div class="d-flex align-items-center px-2">
+              <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-ellipsis-h" style="margin: 5px"></i>
+              </a>
+              <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="" style="color: black !important;">Save</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Copy link to post</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Embed this post</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Unfollow</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Mute</a>
+                <a class="dropdown-item" href="" style="color: black !important;">I don't want to see this</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Report this post</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Who can see this post ?</a>
+              </div>
+            </div>
 
           </div>
             
@@ -344,7 +450,21 @@ function closeNav() {
               </div>
             </div>
           </div>
-            <div class="d-flex align-items-center px-2"><a href=""><i class="fas fa-ellipsis-h" style="margin: 5px"></i></a></div>
+            <div class="d-flex align-items-center px-2">
+              <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-ellipsis-h" style="margin: 5px"></i>
+              </a>
+              <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="" style="color: black !important;">Save</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Copy link to post</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Embed this post</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Unfollow</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Mute</a>
+                <a class="dropdown-item" href="" style="color: black !important;">I don't want to see this</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Report this post</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Who can see this post ?</a>
+              </div>
+            </div>
 
           </div>
             
@@ -391,7 +511,21 @@ function closeNav() {
               </div>
             </div>
           </div>
-            <div class="d-flex align-items-center px-2"><a href=""><i class="fas fa-ellipsis-h" style="margin: 5px"></i></a></div>
+            <div class="d-flex align-items-center px-2">
+              <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-ellipsis-h" style="margin: 5px"></i>
+              </a>
+              <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="" style="color: black !important;">Save</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Copy link to post</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Embed this post</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Unfollow</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Mute</a>
+                <a class="dropdown-item" href="" style="color: black !important;">I don't want to see this</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Report this post</a>
+                <a class="dropdown-item" href="" style="color: black !important;">Who can see this post ?</a>
+              </div>
+            </div>
 
           </div>
             
