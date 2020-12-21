@@ -145,6 +145,11 @@ a {
 }
 
 /*---------------------------middle cards------------------------------------*/
+.icons{
+  display: flex; 
+  justify-content: space-around;
+   align-items: center;
+}
 .speak input[type=text]{
   border: none;
   outline: none;
