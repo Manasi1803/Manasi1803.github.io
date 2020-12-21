@@ -18,7 +18,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <style>
-  	* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -80,13 +80,41 @@ body {
   border:none!important;
   border-radius: 0;
 }
+.card
+{
+  background-color: #222222;
+  border:#111111;
+}
+body{
+  background-color: #111111 !important;
+}
+table tr{
+  background-color: #222222;
+}
+table th{
+  background-color: #222222;
+}
+.thead th{
+  color: rgb(54, 214, 54) !important;
+  background-color: #2222
 
-  </style>
+}
+.scrolling::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+.scrolling::-webkit-scrollbar-thumb {
+  background-color:rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
+}
+
+</style>
 
 </head>
 <body> 
-	<div class="header header1" style="margin-bottom: 4rem !important ">
-    <nav class="navbar navbar-expand-lg  fixed-top n1" style="background-color: #111;">
+    <div class="header header1" style="margin-bottom: 2rem !important; ">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top n1" style="background-color: #111;border-bottom: 1px solid #444;">
       <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
@@ -105,7 +133,7 @@ body {
           </li>
           <li class="nav-item dropdown " >
             <a href=""><div><i class="fa fa-book" aria-hidden="true"></i></a>
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Academics
         </a>
         <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
@@ -146,12 +174,14 @@ body {
       </div>
 
     </nav>
-  </div><br>
-  
+  </div><br><br>
 
+
+
+  <!--header end---------->
   <!----------------------mob header---------------------------------->
-  <div class="header header2" style="margin-bottom: 4.8rem;">
-    <nav class="navbar navbar-dark bg-dark justify-content-between fixed-top">
+  <div class="header header2" style="margin-bottom: 2rem;">
+    <nav class="navbar navbar-dark  justify-content-between fixed-top"style="background-color: #111;border-bottom: 1px solid #444;">
   <div style=";"class="d-flex">
      <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
@@ -211,75 +241,106 @@ function closeNav() {
 }
 </script>
   <!----------------------mob header end---------------------------------->
-      <h3 style="color: white; text-align: center;">Study Material</h3><hr style="color: white">
-	<div class="main py-5">
+  <div class="">
+        <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Study Material</a></li>
+            
+        </ul>
+    </div>
+      <h3 style="color: white; margin:0.8em">Study Material</h3>
+  <div class="main py-2">
 
-		<div class="row">
-			
-			<div class="col-sm-12 col-md-12 col-lg-6">
-				
-				<table class="table table-dark table-striped  table-bordered text-center my-4 mx-3">
-					<thead class="thead-dark">
-						<th colspan="6">Catlogs</th>
-						
-						<tr>
-							<th>S.N.</th>
-							<th>Subject</th>
-							<th>Title</th>
-							<th>Type</th>
-							<th>Faculty</th>
-                            <th>Uploaded on</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>English</td>
-							<td>Core Study on Aidi</td>
-							<td>Lecture Notes</td>
-							<td>Ds.Monse</td>
-							<td>12-12-20 at 12:30 P.M.</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>English</td>
-							<td>Core Study on Aidi</td>
-							<td>Lecture Notes</td>
-							<td>Ds.Monse</td>
-							<td>12-12-20 at 12:30 P.M.</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>English</td>
-							<td>Core Study on Aidi</td>
-							<td>Lecture Notes</td>
-							<td>Ds.Monse</td>
-							<td>12-12-20 at 12:30 P.M.</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>English</td>
-							<td>Core Study on Aidi</td>
-							<td>Lecture Notes</td>
-							<td>Ds.Monse</td>
-							<td>12-12-20 at 12:30 P.M.</td>
-						</tr>
-												<tr>
-							<td>1</td>
-							<td>English</td>
-							<td>Core Study on Aidi</td>
-							<td>Lecture Notes</td>
-							<td>Ds.Monse</td>
-							<td>12-12-20 at 12:30 P.M.</td>
-						</tr>
-										</tbody>
-				 </table>
-		     	</div>
-				<div class="col-sm-12 col-md-12 col-lg-6">
-				 
-	             <div class="card bg-dark text-light my-4 mx-3" style="height:50vh; overflow-y: scroll;" >
-	             	<div class="card-body">
-	             		<h2 class="card-title card-dark text-center">Headlines of Newspaper</h2>
+    <div class="row">
+      
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        
+        <table class="table table-dark table-bordered text-center mx-3">
+          <thead>
+            
+            
+            <tr>
+              <th style="color: rgb(54, 214, 54) !important;">S.N.</th>
+              <th style="color: rgb(54, 214, 54) !important;">Subject</th>
+              <th style="color: rgb(54, 214, 54) !important;">Title</th>
+              <th class="select"><select class="bg-dark" style="color: rgb(54, 214, 54) !important;"><option style="color: rgb(54, 214, 54) !important;">Lecture Notes</option>
+                <option style="color: rgb(54, 214, 54) !important;">Sample Paper</option>
+                <option style="color: rgb(54, 214, 54) !important;">Article</option>
+                <option style="color: rgb(54, 214, 54) !important;">Case Study</option>
+                <option style="color: rgb(54, 214, 54) !important;">Project Study</option>
+              </select></th>
+             
+              <th style="color: rgb(54, 214, 54) !important;">Faculty <i class="fas fa-sort-amount-down-alt"></i></th>
+                            <th style="color: rgb(54, 214, 54) !important;"> Uploaded on<input type="date" class="bg-dark" style="color: rgb(54, 214, 54) !important;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>English</td>
+              <td>Core Study on Aidi</td>
+              <td>Lecture Notes</td>
+              <td>Mr. Narendra Sharma</td>
+              <td>12-12-20 at 12:30 P.M.</td>
+            </tr>
+              <tr>
+              <td>2</td>
+              <td>Science</td>
+              <td>Core Study on Aidi</td>
+              <td>Lecture Notes</td>
+              <td>Ds.Monse</td>
+              <td>12-12-20 at 12:30 P.M.</td>
+            </tr>
+              <tr>
+              <td>3</td>
+              <td>Science</td>
+              <td>Core Study on Science</td>
+              <td>Lecture Notes</td>
+              <td>Ds.Monse</td>
+              <td>12-12-20 at 12:30 P.M.</td>
+            </tr>
+              <tr>
+              <td>4</td>
+              <td>Social Science</td>
+              <td>Core Study on Social Science</td>
+              <td>Lecture Notes</td>
+              <td>Ds.Monse</td>
+              <td>12-12-20 at 12:30 P.M.</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>History</td>
+              <td>Core Study on Aidi</td>
+              <td>Lecture Notes</td>
+              <td>Mr.Rajat</td>
+              <td>12-12-20 at 12:30 P.M.</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>English</td>
+              <td>Core Study on Aidi</td>
+              <td>Lecture Notes</td>
+              <td>Ds.Monse</td>
+              <td>12-12-20 at 12:30 P.M.</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>English</td>
+              <td>Core Study on Aidi</td>
+              <td>Lecture Notes</td>
+              <td>Ds.Monse</td>
+              <td>12-12-20 at 12:30 P.M.</td>
+            </tr>
+                    
+                    </tbody>
+         </table>
+          </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+         
+               <div class="card text-light mx-3 px-3 scrolling" style="background-color:#222222; height:66vh; overflow-y: scroll;" >
+                <div class="card-body">
+                  <h2 class="card-title card-dark text-center" style="color: rgb(54, 214, 54) !important;">Headlines of Newspaper</h2>
                      <ul><li>Tina Doby sets record to become youngest IAS officer. She was only 22 years when she joined IAS.</li></ul>
                      <ul><li> 
                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -303,12 +364,12 @@ function closeNav() {
                      <ul><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li></ul>
-                     <a href="#" class="card-link d-block text-right" style="font-size:22px">Read more</a>
-	                </div>
-	             </div>	
-	            </div>
-	     </div>	
-	</div>
+                    
+                  </div>
+               </div> 
+              </div>
+       </div> 
+  </div>
   <!-------footer for mob view start------------>
 <div class="mfooter">
   <nav class="navbar navbar-light  bg-dark"id="navbar1"style="color: white!important;">
