@@ -6,7 +6,7 @@
 }
 
 body {
-  margin-top: 10px;
+ 
     background: #222!important;
  
 }
@@ -61,10 +61,23 @@ a {
 }
 
 .btn.btn-search {
-    background: #2ECAB6!important;
+    background: #fff!important;
     border-radius: 0;
     color: white;
+
 }
+.sr1 .fa-search{
+  color: black;
+}
+.fa-comment-dots{
+  color: white;
+  font-size: 20px;
+}
+.in{
+  border:none!important;
+  border-radius: 0;
+}
+
 
 .login a:hover {
     text-decoration: underline;
@@ -93,11 +106,15 @@ a {
 }*/
 
 /*-----------------------navbar end------------------------------------------->*/
-/*left  cards*/
+/*----------------------left  cards-----------------------------------*/
+
 .card {
     margin: 10px;
     background: #111!important;
     color: white;
+}
+.card-header{
+  color: #36D636;
 }
 
 .dv{
@@ -117,7 +134,21 @@ a {
 .view a:hover{
     text-decoration: underline;
 }
-/*right cards*/
+.viewall{
+  color: #1DA1F2;
+  /*color: #007bff;*/
+}
+.docs button{
+  border: 1px solid #1DA1F2!important;
+  border-radius: 5px;
+  color: #1DA1F2;
+}
+
+/*---------------------------middle cards------------------------------------*/
+.speak input[type=text]{
+  border: none;
+  outline: none;
+}
 .schedule{
     overflow-y: scroll;
     height: 350px;
@@ -138,9 +169,15 @@ a {
 /* rounded card */
 .card{
     border-radius: 10px;
-    padding: 5px;
+    
+    border: 0.5px solid #444;
 }
-
+.card a i{
+  font-size: 22px;
+}
+.cards .card-body{
+  padding: 5px 3px!important;
+}
 .sharebtm{
     font-weight: bold;
     color: white !important;
@@ -162,6 +199,32 @@ a {
 #text{
     display: none;
 }
+a.morelink {
+  color: #1DA1F2;
+}
+a:visited {
+    color: #1DA1F2;
+}
+a {
+    color: #0254EB;
+}
+
+a.morelink {
+    text-decoration:none;
+    outline: none;
+}
+.morecontent span {
+    display: none;
+}
+.comment {
+    
+    background-color: #f0f0f0;
+    margin: 10px;
+}
+.fa-ellipsis-h{
+  color: white;
+  font-size: initial!important;
+}
 /* card header bg remove */
 
 .schedule::-webkit-scrollbar {
@@ -176,9 +239,9 @@ a {
 .md-sec::-webkit-scrollbar {
     width: 0px; /* Remove scrollbar space for middle secction */
 }
-.far{
+/*.far{
   margin: 3px !important;
-}
+}*/
 /* Modal start */
 
 
@@ -260,6 +323,7 @@ button:hover {
 }
 .header1{
     display: block;
+
 }
 .header2{
     display: none;
@@ -340,28 +404,16 @@ button:hover {
   height: auto!important;
   overflow: hidden;
 }
+.card {
+    margin: 5px;
+   
+}
+.md-sec{
+  margin-bottom: 9vh;
+}
 
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-
-a {
-    color: #0254EB
-}
-a:visited {
-    color: #0254EB
-}
-a.morelink {
-    text-decoration:none;
-    outline: none;
-}
-.morecontent span {
-    display: none;
-}
-.comment {
-    width: 400px;
-    background-color: #f0f0f0;
-    margin: 10px;
 }

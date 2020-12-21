@@ -78,6 +78,8 @@ body {
 .sub > input{
   height: 6vh;
    width: 300px;
+   background-color: #333;
+
    
 
 }
@@ -94,25 +96,45 @@ select::-ms-expand {
 .status > li {
   margin: 10px;
 }
-.card-body{
-   background: #111!important;
+.card-body, .card-header{
+   background: #333!important;
 
+}
+.card-header{
+  color: rgb(54, 214, 54) !important;
 }
 .card-text{
   color: white !important;
 }
 select{
   border: none;
-  background-color: #111;
+  background-color: #333;
+  color: rgb(54, 214, 54);
+}
+.fa-user-circle {
+  color: white !important;
+}
+input[type=text]{
+  background-color: #333;
+ 
   color: white;
+}
+.history::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+.history::-webkit-scrollbar-thumb {
+  background-color:rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
 }
 
     
   </style>
 </head>
 <body>
-  <div class="header header1" style="margin-bottom: 4.8rem; ">
-    <nav class="navbar navbar-expand-lg  fixed-top n1" style="background-color: #111;">
+ <div class="header header1" style="margin-bottom: 2rem !important; ">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top n1" style="background-color: #111;border-bottom: 1px solid #444;">
       <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
@@ -131,7 +153,7 @@ select{
           </li>
           <li class="nav-item dropdown " >
             <a href=""><div><i class="fa fa-book" aria-hidden="true"></i></a>
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Academics
         </a>
         <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
@@ -172,11 +194,7 @@ select{
       </div>
 
     </nav>
-  </div><br>
-  <br>
-
-
-
+  </div><br><br>
 
 
 
@@ -273,7 +291,7 @@ function closeNav() {
         </div>
       </div>
       <h5 class="card-header">History</h5>
-      <div class="card-body " style="overflow-y: scroll; height: 12vh;">
+      <div class="card-body history " style="overflow-y: scroll; height: 12vh;">
         <ul class="card-text" style="font-size: 18px;margin-left: 15px">
           <li>Review Submission on 22/03/2022</li>
            <li>Review Submission on 15/09/2022</li>
