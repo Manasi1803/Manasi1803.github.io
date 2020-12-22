@@ -93,6 +93,7 @@ select {
 select::-ms-expand {
     display: none;
 }
+
 .status > li {
   margin: 10px;
 }
@@ -109,7 +110,7 @@ select::-ms-expand {
 select{
   border: none;
   background-color: #333;
-  color: rgb(54, 214, 54);
+  
 }
 .fa-user-circle {
   color: white !important;
@@ -374,7 +375,7 @@ function closeNav() {
           <label for="" class="text-white"> Special title treatment</label>
           <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
           <select>
-            <option value="#">Declined</option>
+            <option value="#" id="declined">Declined</option>
              <option value="#">Rejected</option>
              <option value="#">Approved</option>
              <option value="#">Pending</option>
@@ -416,7 +417,7 @@ function closeNav() {
          <div class="row d-flex justify-content-between text-center">
           <label for="" class="text-white"> Special title treatment</label>
           <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
-          <select>
+          <select class="declined">
             <option value="#">Declined</option>
              <option value="#">Rejected</option>
              <option value="#">Approved</option>
