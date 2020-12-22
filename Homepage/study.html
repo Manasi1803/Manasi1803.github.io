@@ -99,15 +99,7 @@ table th{
   background-color: #2222
 
 }
-.scrolling::-webkit-scrollbar {
-    width: 0.3em;
-}
 
-.scrolling::-webkit-scrollbar-thumb {
-  background-color:rgb(155, 148, 148);
-  border-radius: 5px;
-  border: none;
-}
 
 </style>
 
@@ -174,10 +166,16 @@ table th{
             <a href=""><div><i class="fa fa-bell" aria-hidden="true"></i></div>
                <div>Notifications</div></a>      
           </li>
-          <li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></div>
-           <div>E-Learning</div></a>      
-          </li>
+          <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          E-Learning
+        </a>
+        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="news.html" style="color: black !important;">News & Articles</a>
+ 
+        </div>
+      </li>
           <li class="nav-item mr-4">
             <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
               <div>Search</div></a>      
@@ -262,14 +260,13 @@ function closeNav() {
             
         </ul>
     </div>
+    <div class="container-fluid">
       <h3 style="color: white; margin:0.8em">Study Material</h3>
-  <div class="main py-2">
 
-    <div class="row">
       
-      <div class="col-sm-12 col-md-12 col-lg-6">
+    
         
-        <table class="table table-dark table-bordered text-center mx-3">
+        <table class="table table-dark table-bordered text-center ">
           <thead>
             
             
@@ -285,7 +282,7 @@ function closeNav() {
               </select></th>
              
               <th style="color: rgb(54, 214, 54) !important;">Faculty <i class="fas fa-sort-amount-down-alt"></i></th>
-                            <th style="color: rgb(54, 214, 54) !important;"> Uploaded on<input type="date" class="bg-dark" style="color: rgb(54, 214, 54) !important;"></th>
+                            <th style="color: rgb(54, 214, 54) !important;"> Uploaded on<input type="date" class="bg-dark" style="color: rgb(54, 214, 54) !important; "></th>
             </tr>
           </thead>
           <tbody>
@@ -348,41 +345,10 @@ function closeNav() {
                     
                     </tbody>
          </table>
+
           </div>
-        <div class="col-sm-12 col-md-12 col-lg-6">
-         
-               <div class="card text-light mx-3 px-3 scrolling" style="background-color:#222222; height:66vh; overflow-y: scroll;" >
-                <div class="card-body">
-                  <h2 class="card-title card-dark text-center" style="color: rgb(54, 214, 54) !important;">Headlines of Newspaper</h2>
-                     <ul><li>Tina Doby sets record to become youngest IAS officer. She was only 22 years when she joined IAS.</li></ul>
-                     <ul><li> 
-                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li></ul>
-                     <ul><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li></ul>
-                     <ul><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li></ul>
-                     <ul><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li></ul>
-                     <ul><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li></ul>
-                     <ul><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li></ul>
-                     <ul><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li></ul>
-                    
-                  </div>
-               </div> 
-              </div>
-       </div> 
-  </div>
+       
+  
   <!-------footer for mob view start------------>
 <div class="mfooter">
   <nav class="navbar navbar-light  bg-dark"id="navbar1"style="color: white!important;">
