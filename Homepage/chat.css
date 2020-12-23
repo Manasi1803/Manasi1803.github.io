@@ -137,8 +137,26 @@ img{ max-width:100%;}
   padding: 18px 16px 10px;
 }
 
-.inbox_chat { height: 550px; overflow-y: scroll;}
+.inbox_chat { height: 550px;}
 
+.inbox_chat::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+.inbox_chat::-webkit-scrollbar-thumb {
+  background-color:rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
+}
+.msg_history::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+.msg_history::-webkit-scrollbar-thumb {
+  background-color:rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
+}
 .active_chat{ background:#ebebeb;}
 
 .incoming_msg_img {
