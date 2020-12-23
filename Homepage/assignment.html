@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -200,17 +199,21 @@ function closeNav() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>DBMS</td>
+                    <td>DBMS<br>
+                    <a href="" data-toggle="modal" data-target="#myModal" style="font-size: 14px;">  [Details] </a>
+                    </td>
                     <td>12 December 2020</td>
                     <td>No</td>
                   </tr>
                   <tr>
-                    <td>C++</td>
+                    <td>C++<br>
+                    <a href="" data-toggle="modal" data-target="#myModal">  [Details] </a></td>
                     <td>12 March 2020</td>
                     <td>Yes</td>
                   </tr>
                   <tr>
-                    <td>Python</td>
+                    <td>Python<br>
+                    <a href="" data-toggle="modal" data-target="#myModal">  [Details] </a></td>
                     <td>5 October 2020</td>
                     <td>Yes</td>
                   </tr>
@@ -349,6 +352,43 @@ function closeNav() {
 
         </ul>
   </nav>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="modal-title" id="exampleModalLabel" style="display: inline; font-size: 17px;"><b>Assignment Details</b></p>
+       <p style="margin-left: 260px;"> <a href="">Print</a></p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: #111; color: #fff;">
+        <b>  <input type="text" value="Title of the Assignment"  disabled="true" style=" color: #111; border: none; font-weight: bold; margin-top: -10px;color: #fff; background-color: #111; display: inline;font-size: 20px;"></b>
+            <input type="text" value="Class"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111; float: right;"><br>
+
+
+
+        Due on
+         <input type="text" value="20 Jan 2022"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111;">
+          <input type="text" value="Monday"  disabled="true" style=" color: #fff; border: none; font-weight: bold; width: 6rem; background-color: #111; display: inline;">
+          <input type="text" value="Subject Name"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111; float: right;">
+            <br><br>
+            <p>
+Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.
+
+
+
+
+            </p>
+
+      </div>
+    </div>
+  </div>
 </div>
 <!--<script>
 var prevScrollpos = window.pageYOffset;
