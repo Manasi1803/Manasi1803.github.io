@@ -130,6 +130,18 @@ input[type=text]{
   border: none;
 }
 
+.redText {
+  color: red;
+}
+.greenText {
+
+  color: #0f0;
+}
+.yellowText {
+  color:yellow;
+}
+
+
     
   </style>
 </head>
@@ -352,77 +364,79 @@ function closeNav() {
         <div class="row d-flex justify-content-between text-center">
          <label for="" class="text-white"> Special title treatment</label>
          <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
-         <select>
-            <option value="#">Rejected</option>
-            <option value="#">Approved</option>
-            <option value="#">Pending</option>
-            <option value="#">Declined</option>
-          </select>
+         <select onchange="this.className=this.options[this.selectedIndex].className" class="greenText" >
+            <option class="greenText"value="#">Approved</option>
+             <option class="redText"  value="#">Rejected</option>
+            
+             <option class="yellowText" value="#">Pending</option>
+         
+           </select>
         </div>
         <div class="row d-flex justify-content-between text-center">
           <label for="" class="text-white"> Special title treatment</label>
           <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
-          <select>
-            <option value="#">Approved</option>
-             <option value="#">Rejected</option>
+          <select onchange="this.className=this.options[this.selectedIndex].className" class="greenText" >
+            <option class="greenText"value="#">Approved</option>
+             <option class="redText"  value="#">Rejected</option>
             
-             <option value="#">Pending</option>
-             <option value="#">Declined</option>
+             <option class="yellowText" value="#">Pending</option>
            </select>
          </div>
 
          <div class="row d-flex justify-content-between text-center">
           <label for="" class="text-white"> Special title treatment</label>
           <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
-          <select>
-            <option value="#" id="declined">Declined</option>
-             <option value="#">Rejected</option>
-             <option value="#">Approved</option>
-             <option value="#">Pending</option>
-             
+          <select onchange="this.className=this.options[this.selectedIndex].className" class="yellowText" >
+            <option class="yellowText" value="#">Pending</option>
+            <option class="greenText"value="#">Approved</option>
+             <option class="redText"  value="#">Rejected</option>
+            
+    
            </select>
          </div>
          <div class="row d-flex justify-content-between text-center">
           <label for="" class="text-white"> Special title treatment</label>
           <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
-          <select>
-            <option value="#">Pending</option>
-             <option value="#">Rejected</option>
-             <option value="#">Approved</option>
+          <select onchange="this.className=this.options[this.selectedIndex].className" class="redText" >
+             <option class="redText"  value="#">Rejected</option>
+            <option class="greenText"value="#">Approved</option>
              
-             <option value="#">Declined</option>
+            
+             <option class="yellowText" value="#">Pending</option>
            </select>
          </div>
          <div class="row d-flex justify-content-between text-center">
           <label for="" class="text-white"> Special title treatment</label>
           <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
-          <select>
-             <option value="#">Rejected</option>
-             <option value="#">Approved</option>
-             <option value="#">Pending</option>
-             <option value="#">Declined</option>
+          <select onchange="this.className=this.options[this.selectedIndex].className" class="greenText" >
+            <option class="greenText"value="#">Approved</option>
+             <option class="redText"  value="#">Rejected</option>
+            
+             <option class="yellowText" value="#">Pending</option>
            </select>
          </div>
          <div class="row d-flex justify-content-between text-center">
           <label for="" class="text-white"> Special title treatment</label>
           <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
-          <select>
-             <option value="#">Rejected</option>
+          <select onchange="this.className=this.options[this.selectedIndex].className" class="yellowText" >
+            <option class="yellowText" value="#">Pending</option>
+            <option class="redText"  value="#">Rejected</option>
+            <option class="greenText"value="#">Approved</option>
              
-             <option value="#">Approved</option>
-             <option value="#">Pending</option>
-             <option value="#">Declined</option>
+            
+             
+        
            </select>
          </div>
          <div class="row d-flex justify-content-between text-center">
           <label for="" class="text-white"> Special title treatment</label>
           <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
-          <select class="declined">
-            <option value="#">Declined</option>
-             <option value="#">Rejected</option>
-             <option value="#">Approved</option>
-             <option value="#">Pending</option>
+          <select onchange="this.className=this.options[this.selectedIndex].className" class="redText" >
+            <option class="redText"  value="#">Rejected</option>
+           <option class="greenText"value="#">Approved</option>
              
+            
+             <option class="yellowText" value="#">Pending</option>
            </select>
          </div>
          
