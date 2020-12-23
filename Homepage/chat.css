@@ -101,7 +101,7 @@ img{ max-width:100%;}
 .srch_bar {
   display: inline-block;
   text-align: right;
-  width: 60%; padding:
+  width: 60%; 
 }
 .headind_srch{ padding:10px 29px 10px 20px; overflow:hidden; border-bottom:1px solid #c4c4c4;}
 
@@ -157,7 +157,11 @@ img{ max-width:100%;}
   border-radius: 5px;
   border: none;
 }
-.active_chat{ background:#ebebeb;}
+h5{
+  color: rgb(120, 136, 88) !important;
+ 
+}
+.active_chat{ background:#444;}
 
 .incoming_msg_img {
   display: inline-block;
@@ -186,9 +190,9 @@ img{ max-width:100%;}
 }
 .received_withd_msg { width: 57%;}
 .mesgs {
-  float: left;
+ 
   padding: 30px 15px 0 25px;
-  width: 60%;
+  
 }
 
  .sent_msg p {
@@ -227,8 +231,14 @@ img{ max-width:100%;}
   top: 11px;
   width: 33px;
 }
-.messaging { padding: 0 0 50px 0;}
+/*.messaging { padding: 0 0 50px 0;}*/
 .msg_history {
-  height: 516px;
+  height: 60vh;
+  
 /*  overflow-y: auto;*/
+}
+.write_msg{
+    color: white !important;
+    background: #333 !important;
+    border: none !important;
 }
