@@ -113,24 +113,7 @@ a {
     background: #111!important;
     color: white;
 }
-.card-header{
-  color: #36D636;
-}
 
-.dv{
-    display: flex;
-    flex-direction: row;
-}
-.dvl, .dvr{
-    display: flex;
-    flex-direction: column;
-
-}
-.list >li {
-    margin: 10px;
-    color: white;
-
-}
 .view a:hover{
     text-decoration: underline;
 }
@@ -143,8 +126,9 @@ a {
   border-radius: 5px;
   color: #1DA1F2;
 }
-
-/*---------------------------middle cards------------------------------------*/
+.card-header{
+  color: #36D636;
+}
 .icons{
   display: flex; 
   justify-content: space-around;
@@ -156,22 +140,18 @@ a {
 }
 .schedule{
     overflow-y: scroll;
-    height: 270px;
+    height: 60vh;
+}
+.schedule::-webkit-scrollbar {
+    width: 0.3em;
 }
 
-/* post now border */
-
-/*.speak-loud{
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    border-radius: 50px;
-    font-size: small;
-    font-weight: bold;
-}*/
-.hashtag:hover{
-  background: #1DA1F2;
-  color: white!important;
+.schedule::-webkit-scrollbar-thumb {
+  background-color:rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
 }
+
 .icons i{
   color: white;
 }
@@ -181,9 +161,19 @@ a {
   border-radius: 50px;
   border: 1px solid #555;
 }
-.speak-loud:hover{
-    background-color: #EBEBEB;
+.srch input[type=search], .srch input[type=text]{
+  background: #333;
+  border-radius: 0;
+ border: 1px solid #333;
+
 }
+.srch .btn.btn-search{
+  background: #1DA1F2!important;
+}
+.dropdown-menu a{
+  color: white;
+}
+
 /* rounded card */
 .card{
     border-radius: 10px;
@@ -200,9 +190,7 @@ a {
     font-weight: bold;
     color: white !important;
 }
-.sharebtm:hover{
-    text-decoration: none;
-}
+
 /* second card */
 .name{
     font-size: large;
@@ -245,93 +233,22 @@ a.morelink {
 }
 /* card header bg remove */
 
-.schedule::-webkit-scrollbar {
-    width: 0.3em;
-}
 
-.schedule::-webkit-scrollbar-thumb {
-  background-color:rgb(155, 148, 148);
-  border-radius: 5px;
-  border: none;
-}
 .md-sec::-webkit-scrollbar {
     width: 0px; /* Remove scrollbar space for middle secction */
 }
-/*.far{
-  margin: 3px !important;
-}*/
-/* Modal start */
 
-
-/* Full-width input fields */
-input[type=password] {
-  width: 100%;
-  padding: 5px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background:#111;
+.page-link{
+  color: #fff!important;
+   background: #111!important;
 }
-.email{
-    width: 100%;
-  padding: 5px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #111;
-
+.page-item.active .page-link{
+  color: #fff!important;
+  background: #1DA1F2!important;
 }
-.docs > input {
-    background: #111;
- 
+.page-item{
+  background: #111!important;
 }
-
-button:hover {
-  opacity:1;
-}
-
-
-/* Extra styles for the cancel button */
-.contibtn {
-  padding: 5px;
-}
-
-
-
-/* Add padding to container elements */
-.container {
-  padding: 5px;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .google{
-    width: 100%;
-  }
-}
-
-.unique h5 {
-   width: 100%; 
-   text-align: center; 
-   border-bottom: 1px solid #000; 
-   line-height: 0.1em;
-   margin: 10px 10px 10px; 
-} 
-
-.unique span { 
-    background:#111; 
-    padding:5px 5px; 
-    color: #fff;
-}
-
-/* Modal end */
 
 .left,.right{
     display: block;
@@ -346,8 +263,11 @@ button:hover {
 .header2{
     display: none;
 }
-.sidenav{
+.sidenav,.sidenav1{
     display: none;
+}
+.mobfilter{
+  display: none;
 }
 /*--------------------media query for mob view--------------------*/
 @media (max-width: 768px) {
@@ -383,7 +303,7 @@ button:hover {
     border: 1px solid white;
     font-size: 13px;
 }
- .sidenav {
+ .sidenav, .sidenav1{
     display: block;
   height: 100%;
   width: 0;
@@ -418,6 +338,13 @@ button:hover {
   color: white;
  
 }
+.sidenav1 .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 .md-sec{
   height: auto!important;
   overflow: hidden;
@@ -429,87 +356,19 @@ button:hover {
 .md-sec{
   margin-bottom: 9vh;
 }
+.mobfilter{
+  display: block;
+}
+.schedule{
+    overflow-y: hidden;
+    height: 100%;
+}
+.dropdown-menu a{
+  color: white!important;
+}
 
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-
-.navbar-default .dropdown-menu.notify-drop {
-  min-width: 275px;
-  background-color: #fff;
-  min-height: 360px;
-  max-height: 360px !important;
-  margin-right: 10px;
-}
-.navbar-default .dropdown-menu.notify-drop .notify-drop-title {
-  border-bottom: 1px solid #e2e2e2;
-  padding: 5px 15px 10px 15px;
-}
-.navbar-default .dropdown-menu.notify-drop .drop-content {
-  min-height: 280px;
-  max-height: 280px;
-  overflow-y: scroll;
-}
-
-
-
-
-.navbar-default .dropdown-menu.notify-drop .drop-content::-webkit-scrollbar-thumb
-{
-  background-color: #ccc;
-}
-.navbar-default .dropdown-menu.notify-drop .drop-content > li {
-  border-bottom: 1px solid #e2e2e2;
-  padding: 10px 0px 5px 0px;
-}
-
-.navbar-default .dropdown-menu.notify-drop .drop-content > li:after {
-  content: "";
-  clear: both;
-  display: block;
-}
-.navbar-default .dropdown-menu.notify-drop .drop-content > li:hover {
-  background-color: grey; \\on hover color
-}
-.navbar-default .dropdown-menu.notify-drop .drop-content > li:last-child {
-  border-bottom: none;
-}
-.navbar-default .dropdown-menu.notify-drop .drop-content > li .notify-img {
-  float: left;
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  margin: 0px 0px 8px 0px;
-}
-
-
-.navbar-default .dropdown-menu.notify-drop .rIcon:hover {
-  color: #333;
-}
-.navbar-default .dropdown-menu.notify-drop .drop-content > li a {
-  font-size: 12px;
-  font-weight: normal;
-}
-.navbar-default .dropdown-menu.notify-drop .drop-content > li {
-  font-weight: bold;
-  font-size: 11px;
-}
-.navbar-default .dropdown-menu.notify-drop .drop-content > li hr {
-  margin: 5px 0;
-  width: 70%;
-  border-color: #e2e2e2;
-}
-.navbar-default .dropdown-menu.notify-drop .drop-content .pd-l0 {
-  padding-left: 0;
-}
-
-
-
-.navbar-default .dropdown-menu.notify-drop .notify-drop-footer {
-  border-top: 1px solid #e2e2e2;
-  bottom: 0;
-  position: relative;
-  padding: 8px 15px;
 }
