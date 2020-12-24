@@ -242,3 +242,24 @@ h5{
     background: #333 !important;
     border: none !important;
 }
+
+
+
+/*@media only screen and (min-device-width: 0px) and (max-device-width: 720px) 
+{
+  .hidden-xs{
+    visibility: hidden;
+
+    }
+
+    
+  }*/
+  .d-block {
+display: block !important;
+}
+@media (max-device-width: 720px) {
+.d-sm-none {
+display: none !important;
+}
+}
+
