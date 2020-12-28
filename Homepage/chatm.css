@@ -108,34 +108,33 @@ root{
   .c1{
     display: none;
   }
-.header1{
+  .header1{
     display: none;
-}
-.header2{
+  }
+  .header2{
     display: block;
-}
-.mfooter{
+  }
+  .mfooter{
     display:block;
-}
-.mfooter a{
+  }
+  .mfooter a{
     font-size: 21px;
-}
-.mfooter ul{
+  }
+  .mfooter ul{
     margin-bottom: 0!important
-}
-.mfooter .navbar{
+  }
+  .mfooter .navbar{
     position: fixed;bottom: 0;
     transition: all 0.5s;
     width: 100%;
-}
-.fa-plus {
+  }
+  .plus i{
     border-radius: 50%;
     color: white;
     border: 1px solid white;
-    font-size: 23px !important;
-    margin: 2px;
-}
- .sidenav {
+    font-size: 13px;
+  }
+  .sidenav {
     display: block;
   height: 100%;
   width: 0;
@@ -149,44 +148,45 @@ root{
   padding-top: 20px;
   color: #fff;
   font-size: 18px;
-
-}
-
-.menu a {
- padding: 10px 0px;
+  
+  }
+  
+  .menu a {
+  padding: 10px 0px;
   text-decoration: none;
   font-size: 18px;
   color: #fff;
   display: block;
   transition: 0.3s;
   
-}
-.menu i{
+  }
+  .menu i{
     font-size: 16px;
-}
-
-.sidenav .closebtn { 
+  }
+  
+  .sidenav .closebtn { 
   font-size: 36px;
   color: white;
- 
-}
-.md-sec{
+  
+  }
+  .md-sec{
   height: auto!important;
   overflow: hidden;
-}
-.card {
+  }
+  .card {
     margin: 5px;
    
-}
-.md-sec{
+  }
+  .md-sec{
   margin-bottom: 9vh;
-}
-
-}
-@media screen and (max-height: 450px) {
+  }
+  
+  }
+  @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
+  }
+  
 
 .msg_send_btn {
   background: #05728f /*none repeat scroll 0 0*/;

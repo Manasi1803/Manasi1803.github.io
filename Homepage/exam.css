@@ -276,3 +276,9 @@ ul.breadcrumb li a:hover {
   background-color: #555 !important;
   color: black !important;
 }
+.btns button{
+  background: #111;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid #555;
+  }
