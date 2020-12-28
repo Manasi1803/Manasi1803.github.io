@@ -106,18 +106,13 @@ border-radius: 0;
 }*/
 
 /*-----------------------navbar end------------------------------------------->*/
-.dd{
-  background: #222; 
-
-}
 .dropdown-menu{
 /* min-height: 280px;
 max-height: 280px;
 overflow-y: scroll;*/
-/* background: #222; */
+background: #111;
 min-width: 280px;
 border: 1px solid #444;
-
 }
 .section1 img{
 width: 50px;
@@ -422,4 +417,8 @@ color: white!important;
 @media screen and (max-height: 450px) {
 .sidenav {padding-top: 15px;}
 .sidenav a {font-size: 18px;}
+}
+
+..dd{
+  background-color: #222;;
 }
