@@ -192,22 +192,25 @@ root{
   .sidenav a {font-size: 18px;}
   }
   
-  .type_msg {border-top: 1px solid #c4c4c4;position: relative;}
+  .type_msg {position: relative;}
   .msg_send_btn {
     background: #05728f /*none repeat scroll 0 0*/;
-    border: medium none;
+    border: none;
+    
     border-radius: 50%;
     color: #fff;
     cursor: pointer;
     font-size: 10px;
-    height: 24px;
+    
     position: absolute;
-   
-    right: 0.1%;
-    top: 10%;
-    width: 24px;
-    z-index: 99999;
+    right:0.5%;
+    top: 3%;
+    width: 4.1em;
+    height: 4.1em;
     outline: none !important;
+  } 
+  .msg_send_btn>*{
+    font-size: large;
   }
   .msg_send_btn:hover{
     background:green;
@@ -219,13 +222,68 @@ root{
 
   .write_msg{
       color: white !important;
-      background: #333 !important;
+      background: #111 !important;
       border: none !important;
       outline: none;
       border-radius: 100px;
-      width:380px;
-      left: 0.1%;
+      width: 100%;
+      padding: 10px 0;
+  }
+  .card{
+    background-color: #333;
   }
   .write_msg::placeholder{
     text-indent: 15px;
+  }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+}
+.plus i{
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+  font-size: 13px;
+}
+
+.icons{
+  display: flex; 
+  justify-content: space-around;
+   align-items: center;
+  }
+  .speak input[type=text]{
+  border: none;
+  outline: none;
+  }
+  .schedule{
+    overflow-y: scroll;
+    height: 270px;
+  }
+  
+  /* post now border */
+  
+  /*.speak-loud{
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 50px;
+    font-size: small;
+    font-weight: bold;
+  }*/
+  .hashtag:hover{
+  background: #1DA1F2;
+  color: white!important;
+  }
+  .icons i{
+  color: white;
+  }
+  .btns button{
+  background: #111;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid #555;
+  }
+  .speak-loud:hover{
+    background-color: #EBEBEB;
   }
