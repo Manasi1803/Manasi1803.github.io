@@ -87,16 +87,21 @@ root{
   
   
   .reciever{
-    background-color: #f0f7fa;
-    padding: 0px 5px;
+    background: rgb(177,192,197) none repeat scroll 0 0;
+    background: linear-gradient(0deg, rgba(177,192,197,0.4209033955379027) 0%, rgba(189,194,200,0.950315160243785) 100%);
+    color: white;
+    padding: 5px 5px;
 
-    border-left: 5px groove #f0f7fa;
+
   }
   
   .sender{
-    background-color: #F4DECB;
-    padding: 0px 5px;
-    border-right: 5px groove #F4DECB;
+    background: rgb(24,53,63) none repeat scroll 0 0;
+    background: linear-gradient(0deg, rgba(24,53,63,0.4209033955379027) 0%, rgba(27,115,225,0.950315160243785) 100%);
+    color: white;
+    
+    padding: 5px 5px;
+   
   
   }
   
