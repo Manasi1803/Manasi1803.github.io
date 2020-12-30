@@ -202,7 +202,7 @@ input[type=text]{
                 </div>
               </div>
           </a>
-          <a class="dropdown-item" href="request.html"  >
+          <a class="dropdown-item" href="notification.html"  >
          <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 px-0">
                   <div class="notify-img">
@@ -215,7 +215,7 @@ input[type=text]{
                 </div>
               </div>
           </a>
-          <a class="dropdown-item" href="badges.html"  >
+          <a class="dropdown-item" href="notification.html"  >
           <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 px-0">
                   <div class="notify-img">
@@ -228,7 +228,7 @@ input[type=text]{
                 </div>
               </div>
           </a>
-          <a class="dropdown-item" href="feedback.html"  >
+          <a class="dropdown-item" href="notification.html"  >
              <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 px-0">
                   <div class="notify-img">
@@ -241,7 +241,7 @@ input[type=text]{
                 </div>
               </div>
           </a>
-          <a class="dropdown-item" href="notice.html"  >
+          <a class="dropdown-item" href="notification.html"  >
           <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 px-0">
                   <div class="notify-img">
@@ -290,7 +290,7 @@ input[type=text]{
   <div class="header header2" style="margin-bottom: 2rem;">
     <nav class="navbar navbar-dark  justify-content-between fixed-top"style="background-color: #111;border-bottom: 1px solid #444;">
   <div class="d-flex">
-     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
+     <a class="navbar-brand pl-0 py-0 " href="index.html"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
     </div>
@@ -370,9 +370,26 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+
+
   <!----------------------mob header end---------------------------------->
   <!----------------------mainbody---------------------------------->
-       <div class="">
+     
+    <!--=====================MOBILE VIEW FROM HERE=====================-->
+<style>
+    .mv{
+        display: none ;
+    }
+    @media (max-width: 600px){
+        .mv{
+            display: block !important;
+        }
+        .dv{
+            display: none !important;
+        }
+    }
+</style>
+<div style="margin-left: 30px;" class="">
         <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2" style="margin-left: -20px;">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Campus</a></li>
@@ -380,8 +397,131 @@ function closeNav() {
             
         </ul>
     </div>
+<div class="container-fluid mv">
+    <h3 class="ml-1" style="color: white;">Pay your fees online</h3>
 
-        <div class="container-fluid">
+    <div class="card mb-1" style="background-color:#222 ; color: #fff;">
+        <div class=" text-center" >
+          <label class="mb-0 py-2 " style="border:none; display: inline-block;font-size: 25px; color: white;  background-color: #222; " type="text" name="schoolname" id="schoolname" class="form-control" >DAV Public School , Delhi</label>
+      </div>
+  </div>
+  <div class="card px-0 pt-0" style="background-color: #222; color: #fff;padding: 25px;">
+    <div class="card-block p-0">
+
+ <form class="px-2" >
+  <label class="mb-0">Student details</label>
+<div class=" d-block">
+  <div class=" mb-1">
+    <input style="background-color: #222;" type="text" class="form-control" placeholder="First name">
+  </div>
+  <div class=" mb-2 ">
+    <input style="background-color: #222;" type="text" class="form-control" placeholder="Last name">
+  </div>
+  <div class="mb-2" >
+    <label class="mb-0" >Reg./Roll no</label>
+    <input style="background-color: #222; " type="text" class="form-control" placeholder="Reg./Roll no">
+  </div>
+  <div class="mb-2">
+    <label class="mb-0" >Class</label>
+  <select class="browser-default custom-select" style="background: #222;border: 2px solid #555!important;color: #fff;"> 
+                  <option value="0">1st</option>
+                  <option value="1">2nd</option>
+                  <option value="2">3rd</option>
+                  <option value="3">4th</option>
+                  <option value="1">5th</option>
+                  <option value="2">6th</option>
+                  
+     </select>   
+    </div>
+    <div class="mb-2" >
+        <label class="mb-0">Year</label>
+        <select  class="browser-default custom-select"style="background: #222;border: 2px solid #555!important;color: #fff;"> 
+                        <option value="0">Pre-Nursery</option>
+                        <option value="1">Nursery</option>
+                        <option value="2">LKG</option>
+                        <option value="3">UKG</option>
+                        <option value="4">Class I</option>
+                        <option value="5">Class II</option>
+                        <option value="6">Class III</option>
+                        <option value="7">Class IV</option>
+                        <option value="8">Class V</option>
+                        <option value="9">Class VI</option>
+                        <option value="10">Class VII</option>
+                        <option value="11">Class VIII</option>
+                        <option value="12">Class IX</option>
+                        <option value="13">Class X</option>
+                        <option value="14">Class XI</option>
+                        <option value="15">Class XII</option>
+                    </select>   
+        </div>
+        <div class="mb-2" >
+            <label class="mb-0">Choose month</label>
+            <select class="browser-default custom-select"style="background: #222;border: 2px solid #555!important;color: #fff;"> 
+                            <option value="0">January</option>
+                            <option value="1">February</option>
+                            <option value="2">March</option>
+                            <option value="3">April</option>
+                            <option value="4">May</option>
+                            <option value="5">June</option>
+                            <option value="6">July</option>
+                            <option value="7">August</option>
+                            <option value="8">September</option>
+                            <option value="9">October</option>
+                            <option value="10">November</option>
+                            <option value="11">December</option>
+            
+                        </select>    
+                   </div>
+                   <div class="">
+                    <input disabled="true" style="background-color: #222; color: #fff;"  type="text" name="amount" id="amount" class="form-control" placeholder="Amount"> 
+                      </div>
+                      <button type="button" class="btn btn-outline-success btn-block mt-2 " href="#" aria-label="submit">
+                        Pay Now
+                     </button>
+</div>
+</form>
+</div>
+</div>
+<h4 class="mt-3 mb-2" style="display: inline-block; color: rgb(54,214,54);" ><b>Other Fees</h4></b>
+<div class="card py-1 mb-4" style="background-color:#222 ;">
+    <form class="px-2" action="">
+        <div class="mb-2">
+            <select class="browser-default custom-select"style="background: #222;border: 2px solid #555!important;color: #fff;"> 
+                              <option value="0">Annual Charge</option>
+                              <option value="1">Exam Fee</option>
+                              <option value="2">Program Fee</option>
+                              <option value="3">Optional Subject</option>
+                              <option value="4">Activity Fees</option>
+                              <option value="5">Library</option>
+                              <option value="6">Gym</option>  
+                          </select>     
+         </div>
+         <div class=" mb-2">
+
+            <select class="browser-default custom-select"style="background: #222;border: 2px solid #555!important;color: #fff;"> 
+                              <option value="0">Status : Paid</option>
+                              <option value="1">Status : Due</option>
+                              <option value="2">Status : Fine</option>   
+                          </select>   
+         </div>
+         <div class="mb-2" >
+
+            <input disabled="true" style="background-color: #222; color: #fff; "  type="text" name="date" id="date" class="form-control" placeholder="Date and time"> 
+               </div>
+
+               <div class="mb-2" >
+                <button style="margin-bottom: 50px;" type="button" class="btn btn-outline-success  btn-block " href="#" aria-label="submit" >Pay Now
+                    </button>
+        </div>
+    </form>
+</div>
+</div>
+<!--==========MOBILE VIEW END HEREE====================-->
+<!--===================dv start here ===================-->
+
+<div class="container-fluid ">
+
+<div class="container-fluid dv">
           <h3 style="color: white; margin-left: 25px">Pay your fees online</h3>
           
 
@@ -515,14 +655,9 @@ function closeNav() {
                 </button>
                 </div>
   </div>
-  
-   
-
-
 </form>
 </div>
-
-  
+  </div>
 
   
 
