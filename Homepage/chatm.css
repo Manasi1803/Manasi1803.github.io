@@ -236,11 +236,11 @@ root{
     text-indent: 15px;
   }
 
-select {
+/* select {
     -webkit-appearance: none;
     -moz-appearance: none;
   
-}
+} */
 .fa-plus{
   border-radius: 50%;
   color: white;
@@ -271,7 +271,7 @@ select {
     font-weight: bold;
   }*/
   .hashtag:hover{
-  background: #1DA1F2;
+  /* background: #1DA1F2; */
   color: white!important;
   }
   .icons i{
